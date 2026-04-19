@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { STUDIO } from "@/lib/studio";
 
 export function Footer() {
@@ -6,12 +7,7 @@ export function Footer() {
     <footer className="bg-bb-surface-alt border-t border-bb-line mt-24">
       <div className="bb-container py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
-          <p
-            className="font-display text-2xl mb-3"
-            style={{ fontVariationSettings: '"opsz" 14, "SOFT" 30' }}
-          >
-            Blade Boutique
-          </p>
+          <Logo className="h-14 md:h-16 w-auto mb-4 text-bb-ink" />
           <p className="bb-meta">{STUDIO.fullAddress}</p>
           <p className="bb-meta mt-1">
             <a href={`tel:${STUDIO.phone}`}>{STUDIO.phone}</a> ·{" "}

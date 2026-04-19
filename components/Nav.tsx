@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const NAV_LINKS = [
@@ -15,10 +16,10 @@ export function Nav() {
       <div className="bb-container flex items-center justify-between h-16 md:h-20">
         <Link
           href="/"
-          className="font-display text-xl md:text-2xl tracking-tight text-bb-ink"
-          style={{ fontVariationSettings: '"opsz" 14, "SOFT" 30' }}
+          aria-label="Blade Boutique — home"
+          className="text-bb-ink hover:text-bb-clay-deep transition-colors"
         >
-          Blade Boutique
+          <Logo className="h-10 md:h-12 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
