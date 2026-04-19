@@ -1,35 +1,54 @@
 @import "tailwindcss";
 
 @theme {
+  /* Backgrounds */
   --color-bb-bg: #FAF7F2;
   --color-bb-surface: #FFFFFF;
   --color-bb-surface-alt: #F2ECE3;
+
+  /* Ink */
   --color-bb-ink: #1F1B17;
   --color-bb-ink-soft: #6E6259;
   --color-bb-ink-mute: #A89D92;
   --color-bb-line: #E8DDD0;
+
+  /* Rebel Pink — primary brand accent */
+  --color-bb-pink: #AA40A7;
+  --color-bb-pink-dark: #8A3288;
+  --color-bb-pink-soft: oklch(from #AA40A7 l c h / 0.10);
+  --color-bb-pink-mid: oklch(from #AA40A7 l c h / 0.18);
+
+  /* Clay — secondary warm accent */
   --color-bb-clay: #A87862;
   --color-bb-clay-deep: #7E5946;
   --color-bb-clay-soft: #D9BFAF;
+
+  /* Utility */
   --color-bb-whatsapp: #25D366;
   --color-bb-whatsapp-dk: #128C7E;
   --color-bb-success: #4F8A6E;
   --color-bb-warn: #C8814B;
   --color-bb-error: #B23A3A;
 
+  /* Typography */
   --font-display: var(--font-fraunces), Georgia, serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
 
+  /* Radii */
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-pill: 999px;
 
+  /* Shadows */
   --shadow-sm: 0 1px 2px rgba(31, 27, 23, 0.04), 0 1px 1px rgba(31, 27, 23, 0.03);
   --shadow-md: 0 4px 12px rgba(31, 27, 23, 0.06), 0 2px 4px rgba(31, 27, 23, 0.04);
   --shadow-lg: 0 16px 40px rgba(31, 27, 23, 0.10), 0 4px 12px rgba(31, 27, 23, 0.06);
   --shadow-fab: 0 8px 24px rgba(37, 211, 102, 0.30);
+  --shadow-pink: 0 8px 32px rgba(170, 64, 167, 0.20);
+  --shadow-pink-sm: 0 4px 16px rgba(170, 64, 167, 0.15);
 
+  /* Spacing */
   --spacing-gut: 24px;
   --spacing-sect-mob: 64px;
   --spacing-sect-desk: 96px;
@@ -40,6 +59,7 @@
   html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -69,12 +89,12 @@
   }
 
   ::selection {
-    background-color: var(--color-bb-clay-soft);
+    background-color: rgba(170, 64, 167, 0.15);
     color: var(--color-bb-ink);
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-bb-clay);
+    outline: 2px solid var(--color-bb-pink);
     outline-offset: 2px;
     border-radius: 2px;
   }
@@ -85,8 +105,8 @@
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   @media (min-width: 768px) {
@@ -96,6 +116,7 @@
     }
   }
 
+  /* Typography */
   .bb-eyebrow {
     font-family: var(--font-sans);
     font-size: 12px;
@@ -103,7 +124,7 @@
     line-height: 1.2;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--color-bb-ink-soft);
+    color: var(--color-bb-pink);
   }
 
   .bb-meta {
@@ -117,7 +138,7 @@
 
   .bb-display-xl {
     font-family: var(--font-display);
-    font-size: clamp(56px, 8vw, 96px);
+    font-size: clamp(52px, 7.5vw, 92px);
     font-weight: 400;
     line-height: 1.02;
     letter-spacing: -0.01em;
@@ -143,9 +164,9 @@
 
   .bb-display-sm {
     font-family: var(--font-display);
-    font-size: clamp(26px, 3vw, 32px);
+    font-size: clamp(22px, 2.5vw, 28px);
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 1.2;
     font-variation-settings: "opsz" 14, "SOFT" 30;
   }
 
@@ -155,6 +176,104 @@
     color: var(--color-bb-ink-soft);
   }
 
+  /* Pink gradient utility — flows through sections */
+  .bb-section-pink-fade {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(170, 64, 167, 0.04) 30%,
+      rgba(170, 64, 167, 0.06) 60%,
+      transparent 100%
+    );
+  }
+
+  .bb-pink-glow {
+    position: relative;
+  }
+  .bb-pink-glow::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 80% 50% at 50% 0%,
+      rgba(170, 64, 167, 0.07) 0%,
+      transparent 70%
+    );
+    z-index: 0;
+  }
+  .bb-pink-glow > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Button base */
+  .bb-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border-radius: var(--radius-md);
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .bb-btn:hover {
+    transform: translateY(-1px);
+  }
+  .bb-btn:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .bb-btn-pink {
+    background-color: var(--color-bb-pink);
+    color: white;
+    box-shadow: var(--shadow-pink-sm);
+  }
+  .bb-btn-pink:hover {
+    background-color: var(--color-bb-pink-dark);
+    box-shadow: var(--shadow-pink);
+  }
+
+  .bb-btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--color-bb-pink);
+    color: var(--color-bb-pink);
+  }
+  .bb-btn-outline:hover {
+    background-color: var(--color-bb-pink);
+    color: white;
+    box-shadow: var(--shadow-pink-sm);
+  }
+
+  .bb-btn-ghost {
+    background: transparent;
+    border: 1.5px solid var(--color-bb-line);
+    color: var(--color-bb-ink);
+  }
+  .bb-btn-ghost:hover {
+    border-color: var(--color-bb-pink);
+    color: var(--color-bb-pink);
+  }
+
+  /* Pink text link */
+  .bb-link-pink {
+    color: var(--color-bb-pink);
+    font-weight: 600;
+    transition: color 0.15s ease, gap 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+  }
+  .bb-link-pink:hover {
+    color: var(--color-bb-pink-dark);
+    gap: 0.625rem;
+  }
+
+  /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;

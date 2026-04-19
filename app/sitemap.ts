@@ -4,7 +4,17 @@ import { SERVICES } from "@/lib/services";
 const BASE = "https://bladeboutique.co.za";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/services", "/pricing", "/gallery", "/about", "/book", "/contact"];
+  const staticRoutes = [
+    "",
+    "/services",
+    "/pricing",
+    "/gallery",
+    "/about",
+    "/book",
+    "/contact",
+    "/microblading-johannesburg",
+    "/permanent-makeup-pretoria",
+  ];
   const now = new Date();
 
   return [

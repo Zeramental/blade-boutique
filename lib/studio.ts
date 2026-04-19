@@ -1,15 +1,28 @@
 export const STUDIO = {
   name: "Blade Boutique",
+  legalName: "Blade Boutique PMU & Tatts",
+  tagline: "Permanent makeup, meticulously done.",
+  artist: {
+    name: "Sam",
+    role: "Permanent Makeup Artist & Cosmetic Tattooist",
+    yearsExperience: 12,
+    specialty: "PMU for melanin-rich skin, dark lip neutralisation, nano brows",
+  },
+  venueName: "Balance Wellness Centre",
   address: {
     street: "8 Tin Road",
     suburb: "Bromhof",
     city: "Randburg",
     province: "Gauteng",
     country: "South Africa",
+    countryCode: "ZA",
     postalCode: "2154",
   },
-  fullAddress: "8 Tin Road, Bromhof, Randburg, Gauteng, 2154",
+  fullAddress: "Balance Wellness Centre, 8 Tin Road, Bromhof, Randburg, Gauteng, 2154",
+  shortAddress: "Balance Wellness Centre, Bromhof, Randburg",
+  serviceArea: ["Randburg", "Johannesburg", "Sandton", "Northriding", "Fourways", "Pretoria", "Gauteng"],
   phone: "+27724111476",
+  phoneDisplay: "+27 72 411 1476",
   whatsappNumber: "27724111476",
   email: "hello@bladeboutique.co.za",
   url: "https://bladeboutique.co.za",
@@ -23,9 +36,21 @@ export const STUDIO = {
     facebook: "https://www.facebook.com/bladeboutiquesa/",
     tiktok: "https://www.tiktok.com/@bladeboutique",
   },
-  freshaUrl: "", // pending Sam's Fresha onboarding
+  freshaUrl: "",
   geo: {
     latitude: -26.0731,
     longitude: 27.9756,
   },
+  pigmentBrands: ["Permablend", "Evenflo"] as const,
+  clientBase: {
+    primary: "Johannesburg and Pretoria",
+    demographic: "Women 22-75, strongest following with ethnic women 28-45",
+  },
+  reviews: {
+    rating: 5.0,
+    count: 40,
+    platform: "Google",
+    note: "40+ Google reviews plus additional reviews on Facebook",
+  },
+  priceRange: "R500 – R4,000",
 };

@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from "@/lib/services";
+import { SERVICES, SERVICE_CATEGORIES, CATEGORY_ORDER, type ServiceCategory } from "@/lib/services";
 
 export function PriceTable() {
-  const categories: ServiceCategory[] = ["brows", "lips", "eyes"];
-
   return (
-    <div className="space-y-12">
-      {categories.map((cat) => {
+    <div className="space-y-14">
+      {CATEGORY_ORDER.map((cat: ServiceCategory) => {
         const items = SERVICES.filter((s) => s.category === cat);
+        if (items.length === 0) return null;
         return (
           <div key={cat}>
             <p className="bb-eyebrow mb-4">{SERVICE_CATEGORIES[cat]}</p>
@@ -15,23 +14,28 @@ export function PriceTable() {
               {items.map((s) => (
                 <li
                   key={s.slug}
-                  className="flex items-center justify-between gap-4 py-5 border-b border-bb-line"
+                  className="flex items-start justify-between gap-4 py-5 border-b border-bb-line"
                 >
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="bb-display-sm">{s.name}</h3>
                     <p className="bb-meta text-bb-ink-mute mt-1">
                       {s.durationLabel}
                     </p>
+                    {s.touchUpLabel && (
+                      <p className="bb-meta text-bb-ink-mute mt-1">
+                        {s.touchUpLabel}
+                      </p>
+                    )}
                   </div>
-                  <div className="flex items-center gap-6">
-                    <span className="bb-meta text-bb-ink whitespace-nowrap">
+                  <div className="flex items-center gap-6 flex-shrink-0">
+                    <span className="bb-meta text-bb-ink whitespace-nowrap font-medium">
                       {s.fromPriceLabel}
                     </span>
                     <Link
                       href={`/services/${s.slug}`}
                       className="text-bb-clay hover:text-bb-clay-deep text-sm font-medium whitespace-nowrap"
                     >
-                      Book →
+                      Details →
                     </Link>
                   </div>
                 </li>
@@ -41,18 +45,32 @@ export function PriceTable() {
         );
       })}
 
-      <div className="bg-bb-surface-alt rounded-[12px] p-6 md:p-8">
-        <p className="bb-eyebrow mb-2">Touch-ups</p>
-        <p className="text-bb-ink mb-1">
-          First touch-up (4-8 weeks): <strong>Included</strong> with all treatments
-        </p>
-        <p className="text-bb-ink">Annual colour boost: From R1,500</p>
+      <div className="bg-bb-surface-alt rounded-[12px] p-6 md:p-8 space-y-4">
+        <div>
+          <p className="bb-eyebrow mb-2">Perfection session</p>
+          <p className="text-bb-ink leading-relaxed">
+            All PMU prices include <strong>one perfection session</strong> within{" "}
+            <strong>4 weeks</strong> of your first treatment. Missed follow-ups will be charged.
+          </p>
+        </div>
+        <div>
+          <p className="bb-eyebrow mb-2">Touch-ups over 12 months</p>
+          <p className="text-bb-ink leading-relaxed">
+            Touch-ups between <strong>12 and 16 months</strong> — R1,800. After 16 months, a fresh
+            session is priced as new.
+          </p>
+        </div>
+        <div>
+          <p className="bb-eyebrow mb-2">Tattoos</p>
+          <p className="text-bb-ink leading-relaxed">
+            Most tattoos are priced by design and size. Kindly book a consultation with Sam
+            for a detailed quote.
+          </p>
+        </div>
       </div>
 
       <p className="bb-meta text-bb-ink-mute italic">
-        All prices include numbing, an aftercare kit, and one touch-up at 4-8
-        weeks. R500 booking deposit secures your slot — applied to the final
-        price on the day. Refundable up to 48 hours before your appointment.
+        Pricing current as at April 2026. All sessions include numbing, an aftercare kit, and the perfection session noted above.
       </p>
     </div>
   );

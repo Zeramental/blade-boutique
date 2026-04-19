@@ -1,7 +1,7 @@
 import { whatsappLink, type WhatsAppContext } from "@/lib/whatsapp";
 
 type Size = "sm" | "md" | "lg";
-type Variant = "primary" | "outline";
+type Variant = "primary" | "outline" | "pink";
 
 const sizeClasses: Record<Size, string> = {
   sm: "h-10 px-4 text-sm",
@@ -23,12 +23,14 @@ export function WhatsAppButton({
   hideTextOnMobile?: boolean;
 }) {
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-md font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.99]";
+    "inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.98]";
 
   const variantClasses =
     variant === "primary"
-      ? "bg-bb-whatsapp text-white hover:bg-bb-whatsapp-dk"
-      : "border border-bb-ink text-bb-ink hover:bg-bb-ink hover:text-bb-bg";
+      ? "bg-bb-whatsapp text-white hover:bg-bb-whatsapp-dk shadow-[0_4px_14px_rgba(37,211,102,0.25)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.35)]"
+      : variant === "pink"
+      ? "bg-bb-pink text-white hover:bg-bb-pink-dark shadow-[0_4px_14px_rgba(170,64,167,0.25)] hover:shadow-[0_6px_20px_rgba(170,64,167,0.35)]"
+      : "border-2 border-bb-pink text-bb-pink hover:bg-bb-pink hover:text-white";
 
   return (
     <a

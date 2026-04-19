@@ -2,27 +2,45 @@ import type { Metadata } from "next";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MapEmbed } from "@/components/MapEmbed";
 import { STUDIO } from "@/lib/studio";
+import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Contact — Visit, call, or message Blade Boutique",
-  description:
-    "Visit Blade Boutique at 8 Tin Road, Bromhof. WhatsApp Sam on +27 72 411 1476 or browse studio hours.",
+  title: "Contact Blade Boutique — Visit, Call or WhatsApp (Bromhof, Randburg)",
+  description: `Visit Blade Boutique at ${STUDIO.fullAddress}. WhatsApp Sam on ${STUDIO.phoneDisplay} or browse studio hours. Permanent makeup studio serving Randburg, Johannesburg and Pretoria.`,
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: STUDIO.url },
+    { name: "Contact", url: `${STUDIO.url}/contact` },
+  ]);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(breadcrumbs)} />
       <div className="bb-container py-16 md:py-24">
         <p className="bb-eyebrow mb-3">Contact</p>
         <h1 className="bb-display-lg mb-6">Visit, call, message.</h1>
-        <p className="bb-body-lg max-w-[55ch] mb-16">
-          The studio is in Bromhof, Randburg — easy parking, single-chair, calm
-          space. WhatsApp is always the fastest way to reach Sam.
+        <p className="bb-body-lg max-w-[58ch] mb-16">
+          The studio is inside Balance Wellness Centre in Bromhof, Randburg —
+          easy parking, single-chair, calm space. WhatsApp is always the fastest
+          way to reach Sam. She typically replies within 2 hours during studio hours.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           <Card title="Address">
-            <p className="text-bb-ink leading-relaxed">{STUDIO.address.street}<br />{STUDIO.address.suburb}<br />{STUDIO.address.city}, {STUDIO.address.postalCode}</p>
+            <p className="text-bb-ink leading-relaxed">
+              <strong>{STUDIO.venueName}</strong>
+              <br />
+              {STUDIO.address.street}
+              <br />
+              {STUDIO.address.suburb}
+              <br />
+              {STUDIO.address.city}, {STUDIO.address.postalCode}
+              <br />
+              {STUDIO.address.province}
+            </p>
           </Card>
 
           <Card title="Hours">
@@ -49,7 +67,7 @@ export default function ContactPage() {
                 href={`tel:${STUDIO.phone}`}
                 className="block bb-meta text-bb-clay hover:text-bb-clay-deep"
               >
-                {STUDIO.phone}
+                {STUDIO.phoneDisplay}
               </a>
             </div>
           </Card>

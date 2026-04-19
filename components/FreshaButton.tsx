@@ -10,7 +10,7 @@ const sizeClasses: Record<Size, string> = {
 
 export function FreshaButton({
   size = "md",
-  label = "Or browse times on Fresha",
+  label = "View available times",
 }: {
   size?: Size;
   label?: string;
@@ -24,10 +24,10 @@ export function FreshaButton({
       href={STUDIO.freshaUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2 rounded-md font-medium transition-all duration-200 border border-bb-ink text-bb-ink hover:bg-bb-ink hover:text-bb-bg ${sizeClasses[size]}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 border-2 border-bb-pink text-bb-pink hover:bg-bb-pink hover:text-white hover:-translate-y-0.5 active:scale-[0.98] ${sizeClasses[size]}`}
     >
       {label}
-      <span aria-hidden="true">→</span>
+      <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">→</span>
     </a>
   );
 }
