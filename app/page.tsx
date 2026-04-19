@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
@@ -60,11 +61,26 @@ export default function Home() {
             Real clients. No filters. Healed at week 4 or later.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[
+              { src: "/images/blade/gallery-brows-1.jpg", alt: "Microblading before and after" },
+              { src: "/images/blade/gallery-lips-3.jpg", alt: "Lip blush before and after" },
+              { src: "/images/blade/gallery-brows-3.jpg", alt: "Powder brows before and after" },
+              { src: "/images/blade/gallery-lips-2.jpg", alt: "Dark lip neutralisation before and after" },
+              { src: "/images/blade/gallery-brows-4.jpg", alt: "Combo brows before and after" },
+              { src: "/images/blade/gallery-lips-1.jpg", alt: "Lip blush healed result" },
+            ].map((g) => (
               <div
-                key={i}
-                className="aspect-[2/1] rounded-[20px] bg-gradient-to-br from-bb-clay-soft to-bb-line border border-bb-line"
-              />
+                key={g.src}
+                className="relative aspect-square rounded-[20px] overflow-hidden border border-bb-line bg-bb-surface-alt"
+              >
+                <Image
+                  src={g.src}
+                  alt={g.alt}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
             ))}
           </div>
           <div className="mt-12 text-center">
@@ -79,7 +95,15 @@ export default function Home() {
       </section>
 
       <section className="bb-container py-20 md:py-32 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-        <div className="aspect-[4/5] rounded-[20px] bg-gradient-to-br from-bb-clay-soft to-bb-line border border-bb-line" />
+        <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line shadow-[0_30px_60px_-30px_rgba(60,40,30,0.25)]">
+          <Image
+            src="/images/blade/sam-portrait.jpg"
+            alt="Sam, founder of Blade Boutique"
+            fill
+            sizes="(min-width: 768px) 45vw, 100vw"
+            className="object-cover"
+          />
+        </div>
         <div>
           <p className="bb-eyebrow mb-3">Meet Sam</p>
           <h2 className="bb-display-md mb-6">
