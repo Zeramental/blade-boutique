@@ -24,7 +24,7 @@ export const STUDIO = {
   phone: "+27724111476",
   phoneDisplay: "+27 72 411 1476",
   whatsappNumber: "27724111476",
-  email: "hello@bladeboutique.co.za",
+  email: "sam@bladeboutique.co.za",
   url: "https://bladeboutique.co.za",
   hours: [
     { day: "Mon-Fri", open: "09:00", close: "17:00" },
