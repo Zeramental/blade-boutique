@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bladeboutique.co.za"),
   title: {
     default:
-      "Blade Boutique — Permanent Makeup Studio in Bromhof, Randburg (Johannesburg)",
+      "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
     template: "%s · Blade Boutique",
   },
   description:
@@ -54,21 +54,21 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     siteName: "Blade Boutique",
     url: "https://bladeboutique.co.za",
-    title: "Blade Boutique — Permanent Makeup Studio in Bromhof, Randburg",
+    title: "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
     description:
-      "Meticulous permanent makeup by Sam — microblading, nano brows, lip blush, dark lip neutralisation. Specialist in PMU for melanin-rich skin.",
+      "Meticulous permanent makeup by Sam: microblading, nano brows, lip blush, dark lip neutralisation. Specialist in PMU for melanin-rich skin.",
     images: [
       {
         url: "/images/blade/sam-portrait.jpg",
         width: 1200,
         height: 630,
-        alt: "Sam — Permanent Makeup Artist at Blade Boutique",
+        alt: "Sam, Permanent Makeup Artist at Blade Boutique",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blade Boutique — Permanent Makeup in Randburg",
+    title: "Blade Boutique: Permanent Makeup in Randburg",
     description:
       "Microblading, nano brows, lip blush, dark lip neutralisation by Sam. Bromhof, Randburg.",
   },

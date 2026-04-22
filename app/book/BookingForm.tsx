@@ -79,7 +79,7 @@ export function BookingForm() {
               {s.name} ({s.fromPriceLabel})
             </option>
           ))}
-          <option value="Not sure">Not sure — recommend something</option>
+          <option value="Not sure">Not sure, recommend something</option>
         </select>
       </Field>
 
@@ -107,7 +107,7 @@ export function BookingForm() {
 
       <p className="bb-meta text-bb-ink-mute">
         Submitting opens WhatsApp with your details pre-filled. You confirm by
-        sending the message — nothing is sent automatically.
+        sending the message. Nothing is sent automatically.
       </p>
 
       {submitted && (

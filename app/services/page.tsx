@@ -12,9 +12,9 @@ import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Permanent Makeup & Cosmetic Tattoo Services — Bromhof, Randburg",
+  title: "Permanent Makeup & Cosmetic Tattoo Services at Bromhof, Randburg",
   description:
-    "Every treatment Sam offers at Blade Boutique in Bromhof, Randburg — microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner, freckles, brow lamination, lash lift and fine line tattoos.",
+    "Every treatment Sam offers at Blade Boutique in Bromhof, Randburg: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner, freckles, brow lamination, lash lift and fine line tattoos.",
   alternates: { canonical: "/services" },
 };
 
@@ -83,15 +83,15 @@ export default function ServicesPage() {
 function categoryBlurb(cat: ServiceCategory): string {
   switch (cat) {
     case "brows":
-      return "Three brow techniques for different skin types — microblading for dry skin, powder for oily, nano for a modern hair-stroke finish.";
+      return "Three brow techniques for different skin types: microblading for dry skin, powder for oily, nano for a modern hair-stroke finish.";
     case "lips":
       return "Soft blushed lip colour and specialist dark lip neutralisation for hyperpigmented lips.";
     case "eyes":
       return "Defined lash lines, from an invisible enhancement to a full liner shape.";
     case "face":
-      return "Cosmetic freckle placement — fully customisable in density and colour.";
+      return "Cosmetic freckle placement, fully customisable in density and colour.";
     case "addons":
-      return "Brow lamination and lash lifting — two of Sam's most-booked treatments. Perfect if you're not ready for permanent work yet.";
+      return "Brow lamination and lash lifting, two of Sam's most-booked treatments. Perfect if you're not ready for permanent work yet.";
     case "tattoos":
       return "Fine line and small-piece tattoos, priced by design. Full-day sessions available.";
   }

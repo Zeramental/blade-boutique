@@ -56,7 +56,7 @@ export function PriceTable() {
         <div>
           <p className="bb-eyebrow mb-2">Touch-ups over 12 months</p>
           <p className="text-bb-ink leading-relaxed">
-            Touch-ups between <strong>12 and 16 months</strong> — R1,800. After 16 months, a fresh
+            Touch-ups between <strong>12 and 16 months</strong>: R1,800. After 16 months, a fresh
             session is priced as new.
           </p>
         </div>

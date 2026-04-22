@@ -4,7 +4,7 @@ import { STUDIO } from "@/lib/studio";
 import { jsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Book Your Permanent Makeup Appointment — Blade Boutique, Randburg",
+  title: "Book Your Permanent Makeup Appointment at Blade Boutique, Randburg",
   description:
     "Book microblading, nano brows, lip blush, dark lip neutralisation or eyeliner with Sam at Blade Boutique, Bromhof. WhatsApp is fastest — replies within 2 hours in studio hours. Fresha calendar coming soon.",
   alternates: { canonical: "/book" },
@@ -45,7 +45,7 @@ export default function BookPage() {
         <p className="bb-eyebrow mb-3">Book</p>
         <h1 className="bb-display-lg mb-6">Book your treatment.</h1>
         <p className="bb-body-lg">
-          Two ways — WhatsApp Sam directly with a few details, or browse open
+          Two ways: WhatsApp Sam directly with a few details, or browse open
           slots on Fresha. Sam typically replies within 2 hours during studio
           hours.
         </p>
@@ -71,7 +71,7 @@ export default function BookPage() {
               <div className="text-center">
                 <p className="text-bb-ink-soft mb-6 leading-relaxed">
                   The Fresha calendar is being set up. For now, please use the
-                  WhatsApp form on the left — Sam responds within 2 hours
+                  WhatsApp form on the left. Sam responds within 2 hours
                   during studio hours.
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function BookPage() {
       </div>
 
       <section className="mt-20 max-w-3xl">
-        <h2 className="bb-display-md mb-6">Before you book — what you should know</h2>
+        <h2 className="bb-display-md mb-6">Before you book: what you should know</h2>
         <div className="space-y-6 bg-bb-surface-alt rounded-[12px] p-6 md:p-8">
           <div>
             <p className="bb-eyebrow mb-2">Perfection session included</p>

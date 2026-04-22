@@ -4,7 +4,7 @@ import { jsonLd, personSchema, breadcrumbSchema } from "@/lib/jsonld";
 import { STUDIO } from "@/lib/studio";
 
 export const metadata: Metadata = {
-  title: "About Sam — 12+ years of permanent makeup in Johannesburg",
+  title: "About Sam: 12+ Years of Permanent Makeup in Johannesburg",
   description:
     "Meet Sam, the permanent makeup artist behind Blade Boutique in Bromhof, Randburg. PhiBrows-trained, specialist in PMU for melanin-rich skin, Permablend + Evenflo pigments. Serving Johannesburg and Pretoria.",
   alternates: { canonical: "/about" },
@@ -36,14 +36,14 @@ export default function AboutPage() {
           </p>
           <p>
             I trained in PhiBrows mapping in 2014, then went deep on lip
-            neutralisation for melanin-rich skin — a skill in short supply in
+            neutralisation for melanin-rich skin, a skill in short supply in
             South Africa. Most of my clients come from word of mouth, and a
             good chunk of my diary is women between 28 and 45 who&rsquo;ve
             done their research on pigment and technique. I take that
             seriously.
           </p>
           <p>
-            I use Permablend and Evenflo pigments — two of the most trusted
+            I use Permablend and Evenflo pigments, two of the most trusted
             pigment ranges in the world. I spoil my clients with the good
             stuff because healing is where permanent makeup is won or lost.
           </p>

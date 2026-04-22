@@ -17,9 +17,9 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Permanent Makeup Pretoria — Microblading, Lip Blush & Dark Lip Neutralisation",
+    "Permanent Makeup Pretoria: Microblading, Lip Blush and Dark Lip Neutralisation",
   description:
-    "Permanent makeup for Pretoria clients by Sam at Blade Boutique — a 35-40 minute drive from central PTA. Microblading, nano brows, lip blush and dark lip neutralisation. 12+ years, Permablend + Evenflo pigments, specialist in PMU for melanin-rich skin. From R2,000.",
+    "Permanent makeup for Pretoria clients by Sam at Blade Boutique, a 35-40 minute drive from central PTA. Microblading, nano brows, lip blush and dark lip neutralisation. 12+ years, Permablend + Evenflo pigments, specialist in PMU for melanin-rich skin. From R2,000.",
   alternates: { canonical: "/permanent-makeup-pretoria" },
   keywords: [
     "permanent makeup pretoria",
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     "lip hyperpigmentation treatment pretoria",
   ],
   openGraph: {
-    title: "Permanent Makeup Pretoria — Blade Boutique",
+    title: "Permanent Makeup Pretoria: Blade Boutique",
     description:
       "PMU for Pretoria clients at Blade Boutique, Randburg. 35-40 min from central PTA. Microblading, lip blush, dark lip neutralisation.",
     url: `${STUDIO.url}/permanent-makeup-pretoria`,
     images: [
-      { url: "/images/blade/sam-portrait.jpg", alt: "Sam, permanent makeup artist at Blade Boutique — serving Pretoria clients" },
+      { url: "/images/blade/sam-portrait.jpg", alt: "Sam, permanent makeup artist at Blade Boutique, serving Pretoria clients" },
     ],
   },
 };
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     q: "Is there a specialist permanent makeup studio between Pretoria and Johannesburg?",
-    a: "Yes. Blade Boutique is in Bromhof, Randburg — a 35 to 40 minute drive from central Pretoria via the N1. Sam has 12+ years of PMU experience and a steady client base travelling from Pretoria every week for microblading, lip blush and dark lip neutralisation. Google rating 5.0 across 40+ reviews.",
+    a: "Yes. Blade Boutique is in Bromhof, Randburg, a 35 to 40 minute drive from central Pretoria via the N1. Sam has 12+ years of PMU experience and a steady client base travelling from Pretoria every week for microblading, lip blush and dark lip neutralisation. 5.0 Google stars across 40+ reviews.",
   },
   {
     q: "How long is the drive from Pretoria to Blade Boutique?",
@@ -55,7 +55,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can the same session handle both PMU and a touch-up if I travel from Pretoria?",
-    a: "Yes — Sam blocks the full session length whether you are coming from Bromhof or Centurion. Plan for 2 to 3 hours in studio (dark lip neutralisation runs closer to 3). Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
+    a: "Yes. Sam blocks the full session length whether you are coming from Bromhof or Centurion. Plan for 2 to 3 hours in studio (dark lip neutralisation runs closer to 3). Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
   },
   {
     q: "Do you do dark lip neutralisation for Pretoria clients?",
@@ -98,8 +98,8 @@ export default function PermanentMakeupPretoriaPage() {
           </h1>
           <p className="bb-body-lg mb-4 max-w-[45ch]">
             Sam at Blade Boutique has been doing permanent makeup for Pretoria
-            clients for over a decade. The studio is in Bromhof, Randburg — a
-            35 to 40 minute drive from central PTA — and a steady stream of
+            clients for over a decade. The studio is in Bromhof, Randburg,
+            a 35 to 40 minute drive from central PTA. A steady stream of
             clients drive down every week.
           </p>
           <p className="bb-meta text-bb-ink-mute mb-8">
@@ -126,7 +126,7 @@ export default function PermanentMakeupPretoriaPage() {
           Why Pretoria clients drive down to Blade Boutique
         </h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-6">
-          Specialist permanent makeup in Pretoria is thin on the ground —
+          Specialist permanent makeup in Pretoria is thin on the ground.
           particularly if you&rsquo;re looking for melanin-rich skin
           specialism, Permablend/Evenflo pigment work, or dark lip
           neutralisation. Sam has 12+ years of full-time PMU practice and a
@@ -134,11 +134,11 @@ export default function PermanentMakeupPretoriaPage() {
           corridor.
         </p>
         <ul className="space-y-3 text-bb-ink-soft text-lg leading-relaxed mb-10">
-          <li>· Specialist in dark lip neutralisation / lip hyperpigmentation treatment — uncommon in PTA</li>
+          <li>· Specialist in dark lip neutralisation and lip hyperpigmentation treatment, uncommon in PTA</li>
           <li>· 12+ years of full-time PMU, not a side hustle</li>
           <li>· Single-chair studio, no rushing, no double-booking</li>
           <li>· Premium Permablend + Evenflo pigments, custom-mixed for your undertone</li>
-          <li>· 5.0 Google rating across 40+ reviews, plus Facebook reviews</li>
+          <li>· 5.0 Google stars across 40+ reviews, plus Facebook reviews</li>
           <li>· Perfection session within 4 weeks always included</li>
         </ul>
 
@@ -186,7 +186,7 @@ export default function PermanentMakeupPretoriaPage() {
           Balance Wellness Centre, Bromhof, Randburg.
         </h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed max-w-[58ch] mb-10">
-          8 Tin Road, Bromhof, Randburg. Easy in, easy out off the N1 — Sam
+          8 Tin Road, Bromhof, Randburg. Easy in, easy out off the N1. Sam
           will WhatsApp you a pin drop once your booking is confirmed.
         </p>
         <MapEmbed />
@@ -194,7 +194,7 @@ export default function PermanentMakeupPretoriaPage() {
 
       <section className="bb-container py-20 md:py-28 max-w-3xl">
         <h2 className="bb-display-md mb-12">
-          Permanent makeup Pretoria — frequently asked
+          Permanent makeup Pretoria: frequently asked
         </h2>
         <FAQ items={FAQ_ITEMS} />
       </section>

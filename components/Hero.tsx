@@ -36,7 +36,7 @@ export function Hero() {
             </span>
           </h1>
           <p className="bb-body-lg max-w-[44ch] mb-6">
-            Meticulous permanent makeup by Sam — microblading, nano brows, lip
+            Meticulous permanent makeup by Sam: microblading, nano brows, lip
             blush and dark lip neutralisation. Twelve years in, specialist in
             PMU for melanin-rich skin.
           </p>
@@ -52,7 +52,7 @@ export function Hero() {
           <div className="mt-8 flex items-center gap-4 flex-wrap">
             <span className="flex items-center gap-1.5 text-sm text-bb-ink-soft">
               <span style={{ color: "var(--color-bb-pink)" }}>★★★★★</span>
-              <span className="font-semibold text-bb-ink">4.9</span> Google
+              <span className="font-semibold text-bb-ink">5.0</span> Google
             </span>
             <span className="text-bb-line" aria-hidden="true">·</span>
             <span className="text-sm text-bb-ink-soft">40+ reviews</span>

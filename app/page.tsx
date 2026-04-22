@@ -12,16 +12,16 @@ import { SERVICES, getService } from "@/lib/services";
 import { jsonLd, faqSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Blade Boutique — Permanent Makeup Studio in Bromhof, Randburg (Johannesburg)",
+  title: "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
   description:
-    "Meticulous permanent makeup by Sam — microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner. Bromhof, Randburg. Specialist in PMU for melanin-rich skin. 12+ years. Permablend + Evenflo pigments.",
+    "Meticulous permanent makeup by Sam: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner. Bromhof, Randburg. Specialist in PMU for melanin-rich skin. 12+ years. Permablend + Evenflo pigments.",
   alternates: { canonical: "/" },
 };
 
 const HOME_FAQ = [
   {
     q: "How long does permanent makeup actually last?",
-    a: "Brows last 1 to 3 years before needing a colour boost. Lip blush lasts 2 to 3 years. Eyeliner and lash enhancement last 3 to 5 years. Pigment fades gently and stays true to tone — we use Permablend and Evenflo, two of the most trusted pigment brands in the world. An annual touch-up keeps everything looking fresh.",
+    a: "Brows last 1 to 3 years before needing a colour boost. Lip blush lasts 2 to 3 years. Eyeliner and lash enhancement last 3 to 5 years. Pigment fades gently and stays true to tone. We use Permablend and Evenflo, two of the most trusted pigment brands in the world. An annual touch-up keeps everything looking fresh.",
   },
   {
     q: "Is Blade Boutique good for darker skin tones?",
@@ -33,7 +33,7 @@ const HOME_FAQ = [
   },
   {
     q: "Will it hurt?",
-    a: "Sam numbs thoroughly before and during the session. Most clients describe it as mild discomfort, similar to tweezing. Lips are the most sensitive — a layered numbing protocol is used for lip blush and dark lip neutralisation.",
+    a: "Sam numbs thoroughly before and during the session. Most clients describe it as mild discomfort, similar to tweezing. Lips are the most sensitive, and a layered numbing protocol is used for lip blush and dark lip neutralisation.",
   },
   {
     q: "How long is a permanent makeup appointment?",
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet Sam section — pink gradient flow */}
+      {/* Meet Sam section */}
       <section
         className="py-20 md:py-32 relative"
         style={{
@@ -182,7 +182,7 @@ export default function Home() {
               PhiBrows-trained, twelve years of work, Permablend and Evenflo
               pigments, and a specialty in lip neutralisation for melanin-rich
               skin. She works out of Balance Wellness Centre in Bromhof,
-              Randburg — one chair, one client at a time.
+              Randburg. One chair, one client at a time.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {["PhiBrows Certified", "12+ Years", "Permablend Pigments", "Evenflo Pigments"].map((badge) => (
@@ -249,26 +249,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA section — deep with pink gradient */}
+      {/* CTA section */}
       <section
         className="py-20 md:py-32 relative overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #1F1B17 0%, #2A1A2A 50%, #1F1B17 100%)",
+          background: "linear-gradient(160deg, #0E0810 0%, #2D0E2D 30%, #1A0B1F 60%, #0E0810 100%)",
         }}
       >
-        {/* Pink glow orb */}
+        {/* Main pink bloom — top centre */}
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
+          className="absolute -top-20 left-1/2 -translate-x-1/2 w-[900px] h-[500px] pointer-events-none"
           aria-hidden="true"
           style={{
-            background: "radial-gradient(ellipse, rgba(170,64,167,0.25) 0%, transparent 70%)",
+            background: "radial-gradient(ellipse, rgba(170,64,167,0.55) 0%, rgba(170,64,167,0.18) 40%, transparent 70%)",
           }}
         />
+        {/* Secondary bloom — bottom left drift */}
         <div
-          className="absolute bottom-0 right-1/4 w-[400px] h-[200px] rounded-full pointer-events-none"
+          className="absolute bottom-0 -left-20 w-[600px] h-[400px] pointer-events-none"
           aria-hidden="true"
           style={{
-            background: "radial-gradient(ellipse, rgba(170,64,167,0.12) 0%, transparent 70%)",
+            background: "radial-gradient(ellipse, rgba(200,80,195,0.40) 0%, rgba(170,64,167,0.12) 50%, transparent 75%)",
+          }}
+        />
+        {/* Accent — bottom right */}
+        <div
+          className="absolute bottom-0 right-0 w-[400px] h-[300px] pointer-events-none"
+          aria-hidden="true"
+          style={{
+            background: "radial-gradient(ellipse at bottom right, rgba(170,64,167,0.30) 0%, transparent 65%)",
+          }}
+        />
+        {/* Sweeping diagonal streak */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          aria-hidden="true"
+          style={{
+            background: "linear-gradient(135deg, transparent 0%, rgba(170,64,167,0.08) 30%, rgba(200,80,195,0.14) 50%, rgba(170,64,167,0.06) 70%, transparent 100%)",
           }}
         />
 

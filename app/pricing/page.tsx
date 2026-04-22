@@ -10,7 +10,7 @@ import {
 import { STUDIO } from "@/lib/studio";
 
 export const metadata: Metadata = {
-  title: "Permanent Makeup Prices — Microblading, Lip Blush, Eyeliner (Randburg)",
+  title: "Permanent Makeup Prices: Microblading, Lip Blush, Eyeliner (Randburg)",
   description:
     "Full Blade Boutique price list. Microblading R2,500 · Nano brows R2,800 · Powder brows R2,500 · Lip blush R2,500 · Dark lip neutralisation R2,800 · Eyeliner R2,000. All PMU prices include a perfection session.",
   alternates: { canonical: "/pricing" },

@@ -40,9 +40,9 @@ export const SERVICES: Service[] = [
     durationHours: 2.5,
     durationLabel: "2.5 hours",
     shortDescription:
-      "Eyebrow microblading — hair-stroke brows hand-drawn one stroke at a time. Soft, natural, defined.",
+      "Eyebrow microblading: hair-stroke brows hand-drawn one stroke at a time. Soft, natural, defined.",
     longDescription:
-      "Microblading (also called eyebrow microblading, hair-stroke brows or semi permanent brow tattoo) uses a hand-tool of fine needles to deposit Permablend or Evenflo pigment in single hair-stroke patterns. Best for clients with sparse-to-medium brow density who want a soft, natural look that mimics real hair. Ideal for normal to dry skin — oily skin blurs strokes over time, so nano brows or powder brows heal better for that skin type.",
+      "Microblading (also called eyebrow microblading, hair-stroke brows or semi permanent brow tattoo) uses a hand-tool of fine needles to deposit Permablend or Evenflo pigment in single hair-stroke patterns. Best for clients with sparse-to-medium brow density who want a soft, natural look that mimics real hair. Ideal for normal to dry skin. Oily skin blurs strokes over time, so nano brows or powder brows heal better for that skin type.",
     keywords: [
       "microblading",
       "microblading near me",
@@ -72,7 +72,7 @@ export const SERVICES: Service[] = [
     durationHours: 2.5,
     durationLabel: "2.5 hours",
     shortDescription:
-      "Machine-placed hair strokes finer than microblading — last longer, heal softer.",
+      "Machine-placed hair strokes finer than microblading. Last longer, heal softer.",
     longDescription:
       "Nano brows use a single ultra-fine digital needle to place crisp hair strokes with more control and kinder healing than manual microblading. Ideal for oily skin, mature skin, and clients who want a longer-lasting hair-stroke result. Nano brows are the next generation of natural brow PMU.",
     keywords: [
@@ -104,7 +104,7 @@ export const SERVICES: Service[] = [
     durationHours: 2.5,
     durationLabel: "2.5 hours",
     shortDescription:
-      "Powder or ombre brows — a soft, powdered finish. Like a perfectly filled-in brow that won't smudge.",
+      "Powder or ombre brows: a soft, powdered finish. Like a perfectly filled-in brow that won't smudge.",
     longDescription:
       "Powder brows (also called ombre brows or shaded brows) use a digital machine to deposit Permablend pigment in a soft pixel pattern, creating a velvety, makeup-finished look. Ideal for oily skin, mature skin, or anyone who wants a more defined daily brow. An ombre effect fades from lighter at the front to deeper through the tail.",
     keywords: [
@@ -166,7 +166,7 @@ export const SERVICES: Service[] = [
     durationHours: 3,
     durationLabel: "3 hours",
     shortDescription:
-      "Lip hyperpigmentation treatment — brings naturally dark or unevenly pigmented lips to a soft, even rosy tone.",
+      "Lip hyperpigmentation treatment that brings naturally dark or unevenly pigmented lips to a soft, even rosy tone.",
     longDescription:
       "Lip hyperpigmentation treatment, also called dark lip neutralisation, uses warm-toned Permablend pigments in layered sessions to soften the appearance of dark or unevenly pigmented lips. A specialist treatment in short supply in South Africa — Sam has trained extensively in lip neutralisation for melanin-rich skin and is one of the most-booked providers for this work in Johannesburg and Pretoria. Most clients benefit from 2-3 sessions for the deepest results; a first session alone delivers visible softening.",
     keywords: [
@@ -197,7 +197,7 @@ export const SERVICES: Service[] = [
     durationHours: 2,
     durationLabel: "2 hours",
     shortDescription:
-      "A fine, precise lash line — like the perfect liner you'd never have to redo.",
+      "A fine, precise lash line, like the perfect liner you'd never have to redo.",
     longDescription:
       "Eyeliner tattoo deposits Permablend pigment along the lash line for a defined, lasting finish. Ranges from a subtle lash enhancement to a fuller liner shape, depending on your preference. Safe for contact-lens wearers.",
     keywords: [
@@ -221,9 +221,9 @@ export const SERVICES: Service[] = [
     durationHours: 1.5,
     durationLabel: "1.5 hours",
     shortDescription:
-      "Pigment placed between your lashes — fuller, defined lashes, no makeup.",
+      "Pigment placed between your lashes for fuller, defined lashes without makeup.",
     longDescription:
-      "Lash enhancement places fine pigment in the spaces between your lashes for a fuller, denser-looking lash line — without any visible liner above the lash line. The most subtle permanent eye treatment. Heals invisible unless you're looking for it.",
+      "Lash enhancement places fine pigment in the spaces between your lashes for a fuller, denser-looking lash line, without any visible liner above the lash line. The most subtle permanent eye treatment. Heals invisible unless you're looking for it.",
     keywords: [
       "lash enhancement Johannesburg",
       "invisible eyeliner Randburg",
@@ -245,9 +245,9 @@ export const SERVICES: Service[] = [
     durationHours: 1.5,
     durationLabel: "1-2 hours",
     shortDescription:
-      "Natural-looking cosmetic freckles placed by hand — scatter pattern, your choice of density.",
+      "Natural-looking cosmetic freckles placed by hand. Scatter pattern, your choice of density.",
     longDescription:
-      "Cosmetic freckles use fine pigment placement to scatter natural-looking freckles across the cheeks and nose. Fully customisable — density, colour and placement are mapped with you before anything is placed. Pricing confirmed at consultation.",
+      "Cosmetic freckles use fine pigment placement to scatter natural-looking freckles across the cheeks and nose. Fully customisable: density, colour and placement are mapped with you before anything is placed. Pricing confirmed at consultation.",
     keywords: [
       "freckle tattoo Johannesburg",
       "cosmetic freckles Randburg",
@@ -275,9 +275,9 @@ export const SERVICES: Service[] = [
     durationHours: 1,
     durationLabel: "1 hour",
     shortDescription:
-      "Brow lamination — sets your natural brows upward for a lifted, fuller shape. Includes shape and tint.",
+      "Brow lamination that sets your natural brows upward for a lifted, fuller shape. Includes shape and tint.",
     longDescription:
-      "Brow lamination (also called eyebrow lamination or a brow lift) relaxes the brow hairs so they sit in a uniform, upward direction — fuller, neater, instantly lifted. Sam includes shaping and tinting in every lamination session. Results last 6-8 weeks. A brilliant in-between step if you're deciding whether to commit to microblading or powder brows.",
+      "Brow lamination (also called eyebrow lamination or a brow lift) relaxes the brow hairs so they sit in a uniform, upward direction. Fuller, neater, instantly lifted. Sam includes shaping and tinting in every lamination session. Results last 6-8 weeks. A brilliant in-between step if you're deciding whether to commit to microblading or powder brows.",
     keywords: [
       "brow lamination",
       "brow lamination near me",
@@ -308,7 +308,7 @@ export const SERVICES: Service[] = [
     durationHours: 1,
     durationLabel: "45-60 minutes",
     shortDescription:
-      "Lash lift and tint — curls your natural lashes from the root. Wide-open eyes, no extensions.",
+      "Lash lift and tint that curls your natural lashes from the root. Wide-open eyes, no extensions.",
     longDescription:
       "A lash lift (also known as a lash perm or keratin lash lift) curls your natural lashes upward from the root and sets the curl for 6-8 weeks. Tint is included at Blade Boutique. No extensions, no glue, no daily curler. Safe for contact-lens wearers and gentler on the lash line than extensions.",
     keywords: [
@@ -343,9 +343,9 @@ export const SERVICES: Service[] = [
     durationHours: 1,
     durationLabel: "By design",
     shortDescription:
-      "Small, fine line and minimalist tattoos — priced by design and size. Full-day sessions available.",
+      "Small, fine line and minimalist tattoos, priced by design and size. Full-day sessions available.",
     longDescription:
-      "Fine line tattoos, small tattoos and minimalist pieces, priced by design and size starting from R500. Full-day sessions from R4,000. Sam's tattooing style is clean, delicate and considered — ideal for small script, single-line florals, fine symbols and minimal geometric work. Book a short consultation to scope your piece, pigment and placement.",
+      "Fine line tattoos, small tattoos and minimalist pieces, priced by design and size starting from R500. Full-day sessions from R4,000. Sam's tattooing style is clean, delicate and considered, ideal for small script, single-line florals, fine symbols and minimal geometric work. Book a short consultation to scope your piece, pigment and placement.",
     keywords: [
       "fine line tattoo",
       "fine line tattoo johannesburg",

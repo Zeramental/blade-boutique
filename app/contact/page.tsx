@@ -5,7 +5,7 @@ import { STUDIO } from "@/lib/studio";
 import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Contact Blade Boutique — Visit, Call or WhatsApp (Bromhof, Randburg)",
+  title: "Contact Blade Boutique: Visit, Call or WhatsApp (Bromhof, Randburg)",
   description: `Visit Blade Boutique at ${STUDIO.fullAddress}. WhatsApp Sam on ${STUDIO.phoneDisplay} or browse studio hours. Permanent makeup studio serving Randburg, Johannesburg and Pretoria.`,
   alternates: { canonical: "/contact" },
 };
@@ -23,7 +23,7 @@ export default function ContactPage() {
         <p className="bb-eyebrow mb-3">Contact</p>
         <h1 className="bb-display-lg mb-6">Visit, call, message.</h1>
         <p className="bb-body-lg max-w-[58ch] mb-16">
-          The studio is inside Balance Wellness Centre in Bromhof, Randburg —
+          The studio is inside Balance Wellness Centre in Bromhof, Randburg.
           easy parking, single-chair, calm space. WhatsApp is always the fastest
           way to reach Sam. She typically replies within 2 hours during studio hours.
         </p>

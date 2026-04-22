@@ -6,10 +6,10 @@ type LogoProps = {
 export function Logo({ className, title = "Blade Boutique" }: LogoProps) {
   return (
     <img
-      src="/logo-arch.svg"
+      src="/logo.png"
       alt={title}
       className={className}
-      style={{ display: "block" }}
+      style={{ display: "block", mixBlendMode: "multiply" }}
     />
   );
 }

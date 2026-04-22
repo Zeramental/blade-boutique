@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SERVICES, getService } from "@/lib/services";
+import { galleryFor } from "@/lib/gallery";
 import { STUDIO } from "@/lib/studio";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { FreshaButton } from "@/components/FreshaButton";
@@ -32,12 +33,12 @@ export async function generateMetadata({
   const altNames = service.aliases.slice(0, 2).join(", ");
 
   return {
-    title: `${service.name} in Randburg & Johannesburg — ${priceLabel} at Blade Boutique`,
+    title: `${service.name} in Randburg & Johannesburg: ${priceLabel} at Blade Boutique`,
     description: `${service.shortDescription} ${service.name} (also known as ${altNames}) by Sam at Blade Boutique, Bromhof. ${service.fromPrice ? `From ${service.fromPriceLabel}.` : "Consultation-based pricing."} Permablend + Evenflo pigments.`,
     alternates: { canonical: `/services/${service.slug}` },
     keywords: service.keywords,
     openGraph: {
-      title: `${service.name} — Blade Boutique, Randburg`,
+      title: `${service.name} at Blade Boutique, Randburg`,
       description: service.shortDescription,
       url: `${STUDIO.url}/services/${service.slug}`,
       images: [{ url: service.image, alt: `${service.name} by Sam at Blade Boutique` }],
@@ -159,19 +160,23 @@ export default async function ServicePage({
         )}
       </section>
 
-      <section className="bg-bb-surface-alt py-20 md:py-32">
-        <div className="bb-container">
-          <h2 className="bb-display-md mb-12">Healed results</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <BeforeAfter
-                key={i}
-                caption={`Healed at week 4 · ${service.name}`}
-              />
-            ))}
+      {galleryFor(service.slug).length > 0 && (
+        <section className="bg-bb-surface-alt py-20 md:py-32">
+          <div className="bb-container">
+            <h2 className="bb-display-md mb-12">Healed results</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryFor(service.slug).slice(0, 6).map((url, i) => (
+                <BeforeAfter
+                  key={url}
+                  imageUrl={url}
+                  caption={`Healed · ${service.name}`}
+                  priority={i === 0}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="bb-container py-20 md:py-32 max-w-3xl">
         <h2 className="bb-display-md mb-12">
@@ -207,7 +212,7 @@ function buildFaq(service: { name: string; category: string; fromPriceLabel: str
     },
     {
       q: "How much does it hurt?",
-      a: "Sam numbs thoroughly before and during the session. Most clients describe it as mild discomfort — similar to tweezing. Lips are the most sensitive; layered numbing is used for those.",
+      a: "Sam numbs thoroughly before and during the session. Most clients describe it as mild discomfort, similar to tweezing. Lips are the most sensitive; layered numbing is used for those.",
     },
     {
       q: "What if I don't love the result?",

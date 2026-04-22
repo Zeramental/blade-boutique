@@ -41,7 +41,7 @@ export function Nav() {
           {/* Logo */}
           <Link
             href="/"
-            aria-label="Blade Boutique — home"
+            aria-label="Blade Boutique home"
             className="transition-opacity hover:opacity-80"
           >
             <Logo className="h-14 md:h-16 w-auto" />
