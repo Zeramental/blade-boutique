@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES, getService } from "@/lib/services";
 import { galleryFor } from "@/lib/gallery";
 import { STUDIO } from "@/lib/studio";
@@ -112,7 +113,16 @@ export default async function ServicePage({
             {service.touchUpLabel ? ` · ${service.touchUpLabel}` : ""}
           </p>
         </div>
-        <div className="aspect-[4/5] rounded-[20px] bg-gradient-to-br from-bb-clay-soft to-bb-line border border-bb-line" />
+        <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line bg-bb-clay-soft">
+          <Image
+            src={galleryFor(service.slug)[0] ?? service.image}
+            alt={`${service.name} by Sam at Blade Boutique`}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+            priority
+          />
+        </div>
       </section>
 
       <TrustStrip />
