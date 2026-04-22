@@ -37,8 +37,9 @@ export function Hero() {
           </h1>
           <p className="bb-body-lg max-w-[44ch] mb-6">
             Meticulous permanent makeup by Sam: microblading, nano brows, lip
-            blush and dark lip neutralisation. Twelve years in, specialist in
-            PMU for melanin-rich skin.
+            blush and dark lip neutralisation. Twelve years in, trained across
+            every skin tone, with a specialty in lip neutralisation for
+            melanin-rich skin.
           </p>
           <p className="bb-meta mb-10 max-w-[44ch]">
             Permablend + Evenflo pigments · One chair, one client · From R2,000

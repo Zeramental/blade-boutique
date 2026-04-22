@@ -32,8 +32,8 @@ export const STUDIO = {
     { day: "Sun", open: null, close: null },
   ] as const,
   social: {
-    instagram: "https://www.instagram.com/bladeboutique_/",
-    facebook: "https://www.facebook.com/bladeboutiquesa/",
+    instagram: "https://www.instagram.com/blade_boutique_studio/",
+    facebook: "https://www.facebook.com/thebladeboutique/",
     tiktok: "https://www.tiktok.com/@bladeboutique",
   },
   freshaUrl: "",

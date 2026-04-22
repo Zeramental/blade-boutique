@@ -110,7 +110,7 @@ export default async function ServicePage({
           </div>
           <p className="bb-meta">
             {service.fromPriceLabel} · {service.durationLabel}
-            {service.touchUpLabel ? ` · ${service.touchUpLabel}` : ""}
+            {service.isPMU ? " · Perfection session included" : ""}
           </p>
         </div>
         <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line bg-bb-clay-soft">
@@ -234,7 +234,7 @@ function buildFaq(service: { name: string; category: string; fromPriceLabel: str
     },
     {
       q: `How much is ${nameLower} at Blade Boutique?`,
-      a: `${name} is ${service.fromPriceLabel}${service.touchUpLabel ? `, with ${service.touchUpLabel.toLowerCase()}` : ""}. The price includes a perfection session within 4 weeks of your first treatment.`,
+      a: `${name} is ${service.fromPriceLabel}. This price includes your perfection session at 4 weeks at no extra cost${service.touchUpLabel ? `. Later maintenance touch-ups are priced separately — ${service.touchUpLabel.toLowerCase()}` : ""}.`,
     },
   ];
   return base;

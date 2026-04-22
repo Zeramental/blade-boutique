@@ -37,7 +37,7 @@ const HOME_FAQ = [
   },
   {
     q: "How long is a permanent makeup appointment?",
-    a: "Plan for 2 to 3 hours. The pigment session itself is 60 to 90 minutes; the rest is consultation, mapping, numbing, and an aftercare brief. Dark lip neutralisation runs closer to 3 hours.",
+    a: "Plan for 1 hour 30 minutes to 2 hours max for your initial session — pigment session itself is 60 to 90 minutes, with the rest being consultation, mapping, numbing and aftercare brief. Follow-up and perfection sessions run 45 minutes to 1 hour.",
   },
   {
     q: "What's the healing process like?",
@@ -111,7 +111,7 @@ export default function Home() {
               { src: "/images/blade/gallery-brows-1.jpg", alt: "Microblading before and after on a client at Blade Boutique in Randburg" },
               { src: "/images/blade/gallery-lips-3.jpg", alt: "Lip blush healed result by Sam at Blade Boutique" },
               { src: "/images/blade/gallery-brows-3.jpg", alt: "Powder brows healed result on oily skin" },
-              { src: "/images/blade/gallery-lips-2.jpg", alt: "Dark lip neutralisation before and after on melanin-rich skin" },
+              { src: "/images/blade/home/healed-lips.webp", alt: "Dark lip neutralisation before and after on melanin-rich skin" },
               { src: "/images/blade/gallery-brows-4.jpg", alt: "Nano brows fine hair-stroke healed result" },
               { src: "/images/blade/gallery-lips-1.jpg", alt: "Lip blush healed, natural tint" },
             ].map((g) => (
@@ -180,9 +180,11 @@ export default function Home() {
             </p>
             <p className="text-bb-ink-soft text-lg leading-relaxed mb-8">
               PhiBrows-trained, twelve years of work, Permablend and Evenflo
-              pigments, and a specialty in lip neutralisation for melanin-rich
-              skin. She works out of Balance Wellness Centre in Bromhof,
-              Randburg. One chair, one client at a time.
+              pigments. Sam is trained across every skin tone — brows, lips,
+              eyeliner, lash and brow styling — with a particular specialty in
+              lip neutralisation for melanin-rich skin. She works out of Balance
+              Wellness Centre in Bromhof, Randburg. One chair, one client at a
+              time.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
               {["PhiBrows Certified", "12+ Years", "Permablend Pigments", "Evenflo Pigments"].map((badge) => (

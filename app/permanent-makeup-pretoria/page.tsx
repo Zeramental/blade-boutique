@@ -55,7 +55,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Can the same session handle both PMU and a touch-up if I travel from Pretoria?",
-    a: "Yes. Sam blocks the full session length whether you are coming from Bromhof or Centurion. Plan for 2 to 3 hours in studio (dark lip neutralisation runs closer to 3). Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
+    a: "Yes. Sam blocks the full session length whether you are coming from Bromhof or Centurion. Plan for 1 hour 30 minutes to 2 hours max in studio. Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
   },
   {
     q: "Do you do dark lip neutralisation for Pretoria clients?",

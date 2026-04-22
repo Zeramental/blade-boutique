@@ -116,7 +116,7 @@ export default function BookPage() {
           <div>
             <p className="bb-eyebrow mb-2">Session length</p>
             <p className="text-bb-ink leading-relaxed">
-              Plan for 2 to 3 hours. Dark lip neutralisation runs closer to 3.
+              Plan for 1 hour 30 minutes to 2 hours max for your initial session. Perfection and follow-up sessions run 45 minutes to 1 hour.
             </p>
           </div>
         </div>

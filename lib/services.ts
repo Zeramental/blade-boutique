@@ -37,8 +37,8 @@ export const SERVICES: Service[] = [
     fromPriceLabel: "R2,500",
     touchUpPrice: 1100,
     touchUpLabel: "R1,100 touch-up (under 12 months)",
-    durationHours: 2.5,
-    durationLabel: "2.5 hours",
+    durationHours: 2,
+    durationLabel: "1.5 - 2 hours",
     shortDescription:
       "Eyebrow microblading: hair-stroke brows hand-drawn one stroke at a time. Soft, natural, defined.",
     longDescription:
@@ -57,7 +57,7 @@ export const SERVICES: Service[] = [
       "brow tattoo johannesburg",
       "semi permanent makeup",
     ],
-    image: "/images/blade/gallery-brows-1.jpg",
+    image: "/images/blade/home/microblading.webp",
     isPMU: true,
   },
   {
@@ -69,8 +69,8 @@ export const SERVICES: Service[] = [
     fromPriceLabel: "R2,800",
     touchUpPrice: 1100,
     touchUpLabel: "R1,100 touch-up (under 12 months)",
-    durationHours: 2.5,
-    durationLabel: "2.5 hours",
+    durationHours: 2,
+    durationLabel: "1.5 - 2 hours",
     shortDescription:
       "Machine-placed hair strokes finer than microblading. Last longer, heal softer.",
     longDescription:
@@ -101,8 +101,8 @@ export const SERVICES: Service[] = [
     fromPriceLabel: "R2,500",
     touchUpPrice: 1100,
     touchUpLabel: "R1,100 touch-up (under 12 months)",
-    durationHours: 2.5,
-    durationLabel: "2.5 hours",
+    durationHours: 2,
+    durationLabel: "1.5 - 2 hours",
     shortDescription:
       "Powder or ombre brows: a soft, powdered finish. Like a perfectly filled-in brow that won't smudge.",
     longDescription:
@@ -117,7 +117,7 @@ export const SERVICES: Service[] = [
       "machine brow tattoo",
       "shaded brows south africa",
     ],
-    image: "/images/blade/gallery-brows-3.jpg",
+    image: "/images/blade/home/powder-brows.webp",
     isPMU: true,
   },
   {
@@ -129,8 +129,8 @@ export const SERVICES: Service[] = [
     fromPriceLabel: "R2,500",
     touchUpPrice: 1100,
     touchUpLabel: "R1,100 touch-up (under 12 months)",
-    durationHours: 2.5,
-    durationLabel: "2.5 hours",
+    durationHours: 2,
+    durationLabel: "1.5 - 2 hours",
     shortDescription:
       "Soft, blushed colour custom-mixed for your undertone. Lasts 2-3 years.",
     longDescription:
@@ -142,7 +142,7 @@ export const SERVICES: Service[] = [
       "permanent lipstick South Africa",
       "cosmetic lip tattoo Gauteng",
     ],
-    image: "/images/blade/gallery-lips-3.jpg",
+    image: "/images/blade/home/lip-blush.webp",
     isPMU: true,
   },
   {
@@ -163,8 +163,8 @@ export const SERVICES: Service[] = [
     fromPriceLabel: "R2,800",
     touchUpPrice: 1100,
     touchUpLabel: "R1,100 touch-up (under 12 months)",
-    durationHours: 3,
-    durationLabel: "3 hours",
+    durationHours: 2,
+    durationLabel: "1.5 - 2 hours",
     shortDescription:
       "Lip hyperpigmentation treatment that brings naturally dark or unevenly pigmented lips to a soft, even rosy tone.",
     longDescription:
@@ -268,8 +268,8 @@ export const SERVICES: Service[] = [
       "brow lift",
     ],
     category: "addons",
-    fromPrice: 650,
-    fromPriceLabel: "R650",
+    fromPrice: 550,
+    fromPriceLabel: "R550",
     touchUpPrice: null,
     touchUpLabel: "",
     durationHours: 1,
@@ -287,7 +287,7 @@ export const SERVICES: Service[] = [
       "eyebrow lamination near me",
       "laminated brows south africa",
     ],
-    image: "/images/blade/gallery-brows-2.jpg",
+    image: "/images/blade/home/brow-lamination.webp",
     isPMU: false,
   },
   {
@@ -301,8 +301,8 @@ export const SERVICES: Service[] = [
       "lash lift and tint",
     ],
     category: "addons",
-    fromPrice: 650,
-    fromPriceLabel: "R650",
+    fromPrice: 550,
+    fromPriceLabel: "R550",
     touchUpPrice: null,
     touchUpLabel: "",
     durationHours: 1,
@@ -320,7 +320,7 @@ export const SERVICES: Service[] = [
       "keratin lash lift",
       "eyelash lift south africa",
     ],
-    image: "/images/blade/gallery-brows-4.jpg",
+    image: "/images/blade/home/lash-lift.webp",
     isPMU: false,
   },
   {
