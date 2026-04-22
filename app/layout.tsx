@@ -77,6 +77,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   category: "Beauty & Personal Care",
+  verification: {
+    google: "R7UEzNdPY-yFapAPUlGDIn_drvjAxdCcHDpZSYvsdY8",
+  },
 };
 
 export default function RootLayout({
