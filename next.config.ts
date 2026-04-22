@@ -11,21 +11,15 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
+    // Next.js strips trailing slashes before running custom redirects, so
+    // sources here must be the slash-stripped form or they never match.
     return [
-      // Old WordPress URL patterns → new pages (301 permanent)
-      { source: "/gallery/", destination: "/gallery", permanent: true },
-      { source: "/services/", destination: "/services", permanent: true },
-      { source: "/about/", destination: "/about", permanent: true },
-      { source: "/contact/", destination: "/contact", permanent: true },
-      { source: "/whatsapp/", destination: "/book", permanent: true },
-      { source: "/2025/05/10/hello-world/", destination: "/", permanent: true },
-      { source: "/2025/05/09/jetpack-forms/", destination: "/book", permanent: true },
-      { source: "/2025/05/10/services/", destination: "/services", permanent: true },
-      { source: "/2025/05/07/location/", destination: "/contact", permanent: true },
-      { source: "/category/uncategorized/", destination: "/", permanent: true },
-      { source: "/category/:slug/", destination: "/", permanent: true },
-      // Trailing slash normalisation for anything else
-      { source: "/:path+/", destination: "/:path+", permanent: true },
+      { source: "/whatsapp", destination: "/book", permanent: true },
+      { source: "/2025/05/10/hello-world", destination: "/", permanent: true },
+      { source: "/2025/05/09/jetpack-forms", destination: "/book", permanent: true },
+      { source: "/2025/05/10/services", destination: "/services", permanent: true },
+      { source: "/2025/05/07/location", destination: "/contact", permanent: true },
+      { source: "/category/:slug*", destination: "/", permanent: true },
     ];
   },
 };
