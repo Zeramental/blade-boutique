@@ -1,5 +1,5 @@
 export const STUDIO = {
-  name: "Blade Boutique",
+  name: "Blade Boutique Studio",
   legalName: "Blade Boutique PMU & Tatts",
   tagline: "Permanent makeup, meticulously done.",
   artist: {
