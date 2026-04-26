@@ -16,6 +16,7 @@ import {
   faqSchema,
   breadcrumbSchema,
 } from "@/lib/jsonld";
+import { PageViewTracker } from "@/components/PageViewTracker";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -75,6 +76,10 @@ export default async function ServicePage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(graph)} />
+      <PageViewTracker
+        event="service_view"
+        params={{ event_category: "engagement", event_label: service.name, service_slug: service.slug }}
+      />
 
       <div className="bb-container pt-8">
         <nav className="bb-meta" aria-label="Breadcrumb">

@@ -1,6 +1,6 @@
 "use client";
 
-function gtagEvent(
+export function gtagEvent(
   name: string,
   params?: Record<string, string | number | boolean>
 ) {
@@ -18,4 +18,10 @@ export const GA = {
 
   bookingFormSubmit: (service: string) =>
     gtagEvent("booking_form_submit", { event_category: "conversion", event_label: service }),
+
+  serviceView: (serviceName: string, slug: string) =>
+    gtagEvent("service_view", { event_category: "engagement", event_label: serviceName, service_slug: slug }),
+
+  pricingView: () =>
+    gtagEvent("pricing_view", { event_category: "engagement" }),
 };

@@ -8,6 +8,7 @@ import {
   faqSchema,
 } from "@/lib/jsonld";
 import { STUDIO } from "@/lib/studio";
+import { PageViewTracker } from "@/components/PageViewTracker";
 
 export const metadata: Metadata = {
   title: "Permanent Makeup Prices: Microblading, Lip Blush, Eyeliner (Randburg)",
@@ -52,6 +53,7 @@ export default function PricingPage() {
   return (
     <div className="bb-container py-16 md:py-24 max-w-3xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(graph)} />
+      <PageViewTracker event="pricing_view" params={{ event_category: "engagement" }} />
       <p className="bb-eyebrow mb-3">Pricing</p>
       <h1 className="bb-display-lg mb-6">Honest, transparent prices.</h1>
       <p className="bb-body-lg mb-16">
