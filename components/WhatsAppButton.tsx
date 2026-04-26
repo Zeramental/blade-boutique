@@ -1,4 +1,7 @@
+"use client";
+
 import { whatsappLink, type WhatsAppContext } from "@/lib/whatsapp";
+import { GA } from "@/lib/analytics";
 
 type Size = "sm" | "md" | "lg";
 type Variant = "primary" | "outline" | "pink";
@@ -37,6 +40,7 @@ export function WhatsAppButton({
       href={whatsappLink(context)}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => GA.whatsappClick(typeof context === "object" ? context.context : "button")}
       className={`${base} ${sizeClasses[size]} ${variantClasses}`}
       aria-label={label}
     >

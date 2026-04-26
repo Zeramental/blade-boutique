@@ -3,10 +3,12 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { whatsappLink } from "@/lib/whatsapp";
 import { SERVICES } from "@/lib/services";
 import { WhatsAppGlyph } from "@/components/WhatsAppButton";
+import { GA } from "@/lib/analytics";
+import { createClient } from "@/lib/supabase/client";
 
 const schema = z.object({
   name: z.string().min(2, "Please tell me your name"),
@@ -21,13 +23,37 @@ type FormData = z.infer<typeof schema>;
 
 export function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
+  const formStarted = useRef(false);
+  const supabase = createClient();
+
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
-  function onSubmit(data: FormData) {
+  function onFirstInteraction() {
+    if (formStarted.current) return;
+    formStarted.current = true;
+    GA.bookingFormStart();
+  }
+
+  async function onSubmit(data: FormData) {
+    GA.bookingFormSubmit(data.service);
+
+    // Log enquiry to Supabase — fire and forget, never blocks the WhatsApp redirect
+    supabase.from("enquiries").insert({
+      name: data.name,
+      phone: data.phone,
+      email: data.email || null,
+      service: data.service,
+      preferred_date: data.preferredDate || null,
+      message: data.message || null,
+      source: "website",
+    }).then(({ error }) => {
+      if (error) console.error("Enquiry log failed:", error.message);
+    });
+
     const url = whatsappLink({
       context: "form",
       name: data.name,
@@ -42,7 +68,7 @@ export function BookingForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+    <form onSubmit={handleSubmit(onSubmit)} onFocus={onFirstInteraction} className="space-y-5">
       <Field label="Name" error={errors.name?.message} required>
         <input
           {...register("name")}
