@@ -117,6 +117,9 @@ export default async function ServicePage({
             {service.fromPriceLabel} · {service.durationLabel}
             {service.isPMU ? " · Perfection session included" : ""}
           </p>
+          <p className="bb-meta mt-2 text-bb-ink-mute">
+            Studio in Bromhof, Randburg · 15 min from Sandton · 20 min from Fourways
+          </p>
         </div>
         <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line bg-bb-clay-soft">
           <Image

@@ -44,10 +44,13 @@ export default function BookPage() {
       <div className="max-w-2xl mb-12">
         <p className="bb-eyebrow mb-3">Book</p>
         <h1 className="bb-display-lg mb-6">Book your treatment.</h1>
-        <p className="bb-body-lg">
+        <p className="bb-body-lg mb-4">
           Two ways to book: fill in the form below and Sam will WhatsApp you
           back, or message her directly. She typically replies within 2 hours
           during studio hours.
+        </p>
+        <p className="bb-meta text-bb-ink-mute">
+          Studio in Bromhof, Randburg · 15 min from Sandton · 20 min from Fourways
         </p>
       </div>
 
