@@ -8,7 +8,6 @@ import { whatsappLink } from "@/lib/whatsapp";
 import { SERVICES } from "@/lib/services";
 import { WhatsAppGlyph } from "@/components/WhatsAppButton";
 import { GA } from "@/lib/analytics";
-import { createClient } from "@/lib/supabase/client";
 
 const schema = z.object({
   name: z.string().min(2, "Please tell me your name"),
@@ -24,7 +23,6 @@ type FormData = z.infer<typeof schema>;
 export function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
   const formStarted = useRef(false);
-  const supabase = createClient();
 
   const {
     register,
@@ -41,18 +39,21 @@ export function BookingForm() {
   async function onSubmit(data: FormData) {
     GA.bookingFormSubmit(data.service);
 
-    // Log enquiry to Supabase — fire and forget, never blocks the WhatsApp redirect
-    supabase.from("enquiries").insert({
-      name: data.name,
-      phone: data.phone,
-      email: data.email || null,
-      service: data.service,
-      preferred_date: data.preferredDate || null,
-      message: data.message || null,
-      source: "website",
-    }).then(({ error }) => {
-      if (error) console.error("Enquiry log failed:", error.message);
-    });
+    // Server-side log via service role — bypasses RLS, fire and forget
+    fetch("/api/enquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.name,
+        phone: data.phone,
+        email: data.email || null,
+        service: data.service,
+        preferred_date: data.preferredDate || null,
+        message: data.message || null,
+        source: "website",
+      }),
+      keepalive: true,
+    }).catch(() => {});
 
     const url = whatsappLink({
       context: "form",

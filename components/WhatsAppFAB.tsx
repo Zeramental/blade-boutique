@@ -17,7 +17,15 @@ export function WhatsAppFAB() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with Sam on WhatsApp"
-      onClick={() => GA.whatsappClick("fab")}
+      onClick={() => {
+        GA.whatsappClick("fab");
+        fetch("/api/track", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ event_type: "whatsapp_click", page: window.location.pathname }),
+          keepalive: true,
+        }).catch(() => {});
+      }}
       className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 rounded-full bg-bb-whatsapp text-white flex items-center justify-center hover:bg-bb-whatsapp-dk transition-colors group"
       style={{ boxShadow: "0 8px 24px rgba(37, 211, 102, 0.30)" }}
     >

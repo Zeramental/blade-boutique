@@ -35,12 +35,35 @@ export function WhatsAppButton({
       ? "bg-bb-pink text-white hover:bg-bb-pink-dark shadow-[0_4px_14px_rgba(170,64,167,0.25)] hover:shadow-[0_6px_20px_rgba(170,64,167,0.35)]"
       : "border-2 border-bb-pink text-bb-pink hover:bg-bb-pink hover:text-white";
 
+  function handleClick() {
+    const label = typeof context === "object" ? context.context : "button";
+    GA.whatsappClick(label);
+
+    // Server-side log — no await, fire-and-forget
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      fetch("/api/track", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_type: "whatsapp_click",
+          page: window.location.pathname,
+          utm_campaign: sp.get("utm_campaign"),
+          utm_content: sp.get("utm_content"),
+          utm_term: sp.get("utm_term"),
+          utm_device: sp.get("utm_device"),
+        }),
+        keepalive: true,
+      }).catch(() => {});
+    } catch {}
+  }
+
   return (
     <a
       href={whatsappLink(context)}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => GA.whatsappClick(typeof context === "object" ? context.context : "button")}
+      onClick={handleClick}
       className={`${base} ${sizeClasses[size]} ${variantClasses}`}
       aria-label={label}
     >
