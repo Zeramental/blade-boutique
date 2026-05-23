@@ -64,7 +64,7 @@ export default function PricingPage() {
 
       <PriceTable />
 
-      <div className="mt-12 rounded-2xl bg-bb-ink/40 border border-white/10 px-8 py-8 text-center">
+      <div className="mt-12 rounded-2xl bg-bb-surface-alt border border-bb-line px-8 py-8 text-center">
         <p className="bb-display-sm mb-2">Questions about any of these prices?</p>
         <p className="text-bb-ink-soft mb-6 text-sm leading-relaxed">
           Chat with Sam directly on WhatsApp. She&rsquo;ll answer quickly and there&rsquo;s no obligation to book.
