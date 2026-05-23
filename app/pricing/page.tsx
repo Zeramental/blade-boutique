@@ -64,6 +64,18 @@ export default function PricingPage() {
 
       <PriceTable />
 
+      <div className="mt-12 rounded-2xl bg-bb-ink/40 border border-white/10 px-8 py-8 text-center">
+        <p className="bb-display-sm mb-2">Questions about any of these prices?</p>
+        <p className="text-bb-ink-soft mb-6 text-sm leading-relaxed">
+          Chat with Sam directly on WhatsApp. She&rsquo;ll answer quickly and there&rsquo;s no obligation to book.
+        </p>
+        <WhatsAppButton
+          context={{ context: "generic", message: "Hi Sam, I have a question about your pricing. Sent from bladeboutique.co.za/pricing" }}
+          label="Chat with Sam about pricing"
+          size="lg"
+        />
+      </div>
+
       <section className="mt-20">
         <h2 className="bb-display-md mb-8">Common questions about pricing</h2>
         <div className="space-y-8">

@@ -7,7 +7,7 @@ const BASE = "https://bladeboutique.co.za";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
-    "",
+    "/",
     "/services",
     "/pricing",
     "/gallery",
