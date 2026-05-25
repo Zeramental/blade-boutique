@@ -936,6 +936,111 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
   {
+    slug: "microblading-near-me-johannesburg",
+    title: "Microblading Near Me in Johannesburg: Blade Boutique, Bromhof",
+    excerpt:
+      "Looking for microblading near you in Johannesburg? Blade Boutique is in Bromhof, Randburg — a quick drive from Sandton, Fourways, and Roodepoort. Here is what to expect.",
+    category: "Brows",
+    readTime: 5,
+    publishedAt: "2026-05-25",
+    featuredImage: "/images/blade/blog/microblading-near-me-johannesburg.jpg",
+    featuredImageAlt:
+      "Healed microblading brows on a South African woman at Blade Boutique in Bromhof, Randburg, Johannesburg",
+    seo: {
+      title:
+        "Microblading Near Me Johannesburg — Blade Boutique Bromhof, Randburg",
+      description:
+        "Looking for microblading near you in Johannesburg? Blade Boutique is in Bromhof, Randburg. Microblading R2,500, includes perfection session. Book via WhatsApp.",
+    },
+    content: [
+      {
+        type: "p",
+        text: "If you have been searching for microblading near you in Johannesburg, Blade Boutique is a permanent makeup studio run by Sam in Bromhof, Randburg. It is a quick drive from Sandton (about 20 minutes), Fourways (15 minutes), Roodepoort (10 minutes), and Northriding. Sam works from a private, clean studio and handles every appointment herself.",
+      },
+      {
+        type: "h2",
+        text: "Where exactly is Blade Boutique?",
+      },
+      {
+        type: "p",
+        text: "The studio is in Bromhof, Randburg — a residential suburb just off Witkoppen Road. It is not a shared salon space. Clients come to a quiet, private studio where Sam is the only practitioner. The address is shared directly when you confirm your booking via WhatsApp.",
+      },
+      {
+        type: "list",
+        intro: "Driving time from nearby areas:",
+        items: [
+          "Fourways and Lonehill: approximately 15 minutes",
+          "Sandton and Morningside: approximately 20 minutes",
+          "Roodepoort and Northriding: approximately 10 minutes",
+          "Randburg CBD and Ferndale: approximately 10 minutes",
+          "Midrand: approximately 25–30 minutes",
+          "Pretoria South: approximately 40–45 minutes (see the PMU Pretoria guide for closer options)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What permanent makeup treatments are available?",
+      },
+      {
+        type: "p",
+        text: "Sam specialises in brow, lip, and eye permanent makeup — all with a focus on natural, flattering results rather than overdone aesthetics. Every treatment includes a perfection session within four weeks at no extra cost.",
+      },
+      {
+        type: "list",
+        intro: "Current prices at Blade Boutique:",
+        items: [
+          "Microblading: R2,500 (includes perfection session)",
+          "Nano brows: R2,800 (includes perfection session)",
+          "Powder and ombre brows: R2,500 (includes perfection session)",
+          "Lip blush: R2,500 (includes perfection session)",
+          "Dark lip neutralisation: R2,800 (includes perfection session)",
+          "Permanent eyeliner: R2,000 (includes perfection session)",
+          "Brow lamination with tint: R550",
+          "Lash lift and tint: R550",
+        ],
+      },
+      {
+        type: "pullquote",
+        text: "Every PMU treatment at Blade Boutique includes a perfection session within four weeks. No hidden add-ons — the price you see is the price you pay.",
+      },
+      {
+        type: "h2",
+        text: "Is microblading the right treatment for you?",
+      },
+      {
+        type: "p",
+        text: "Microblading uses a manual hand tool to draw fine, hair-like strokes in the skin — the result mimics real brow hairs and heals looking very natural. It works best on normal to dry skin. If your skin tends to be oily, powder brows or nano brows are likely to hold better and last longer. If you are not sure, send Sam a photo of your brows in natural light on WhatsApp — she will tell you which treatment is most likely to work for your skin type before you book.",
+      },
+      {
+        type: "tip",
+        heading: "Microblading vs powder brows: the quick answer",
+        text: "If your T-zone is oily by midday, powder brows will outlast microblading by at least a year. If your skin is normal to dry, microblading gives a more natural, hair-like result. Sam will confirm which is right for your skin at consultation.",
+      },
+      {
+        type: "h2",
+        text: "How to book",
+      },
+      {
+        type: "p",
+        text: "All bookings are made via WhatsApp. Send Sam a message with what you are interested in, and she will confirm availability, answer any questions, and give you the studio address when your appointment is confirmed. There is no online booking system — this keeps communication direct and means you speak to the person doing your treatment, not a front desk.",
+      },
+      {
+        type: "h2",
+        text: "Why Blade Boutique?",
+      },
+      {
+        type: "p",
+        text: "Sam has been working in permanent makeup for over a decade. She uses Permablend and Evenflo pigments — the professional standard for safe, true-fading colour — and single-use, pre-packaged needles at every appointment. The studio is hygienic, private, and focused entirely on permanent makeup and related treatments. There is no pressure to upgrade or add services at the appointment. Her prices are listed publicly because she believes you should know what you are paying before you walk in.",
+      },
+      {
+        type: "cta",
+        heading: "Looking for microblading near you in Johannesburg?",
+        body: "Message Sam on WhatsApp to check availability and ask any questions before you book. She responds quickly and will give you an honest answer about what to expect.",
+      },
+    ],
+  },
+
+  {
     slug: "how-to-choose-permanent-makeup-artist-johannesburg",
     title: "How to Choose a Permanent Makeup Artist in Johannesburg (8 Questions to Ask First)",
     excerpt:
