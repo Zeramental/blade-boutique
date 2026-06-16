@@ -13,6 +13,7 @@ import {
 } from "@/lib/jsonld";
 
 const GA_ID = "G-3R9XF269LZ";
+const ADS_ID = "AW-17074471838";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -105,7 +106,8 @@ export default function RootLayout({
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`}
+gtag('config', '${GA_ID}');
+gtag('config', '${ADS_ID}');`}
         </Script>
         <script
           type="application/ld+json"

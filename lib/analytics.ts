@@ -1,8 +1,8 @@
 "use client";
 
 const ADS_CONV = {
-  bookingFormSubmit: "AW-18121242373/hRLpCIPR8aIcEIXu8MBD",
-  whatsappClick:     "AW-18121242373/0k5uCIbR8aIcEIXu8MBD",
+  bookingFormSubmit: "AW-17074471838/lCVDCInE9b8cEJ6H380_",
+  whatsappClick:     "AW-17074471838/2Jo9CIzE9b8cEJ6H380_",
 };
 
 export function gtagEvent(
