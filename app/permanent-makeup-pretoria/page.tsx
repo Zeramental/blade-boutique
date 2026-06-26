@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Permanent Makeup Pretoria: Blade Boutique",
     description:
-      "PMU for Pretoria clients at Blade Boutique, Randburg. 35-40 min from central PTA. Microblading, lip blush, dark lip neutralisation.",
+      "PMU for Pretoria clients at Blade Boutique, Fourways. 35-45 min from central PTA. Microblading, lip blush, dark lip neutralisation.",
     url: `${STUDIO.url}/permanent-makeup-pretoria`,
     images: [
       { url: "/images/blade/sam-portrait.jpg", alt: "Sam, permanent makeup artist at Blade Boutique, serving Pretoria clients" },
@@ -47,15 +47,15 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     q: "Is there a specialist permanent makeup studio between Pretoria and Johannesburg?",
-    a: "Yes. Blade Boutique is in Bromhof, Randburg, a 35 to 40 minute drive from central Pretoria via the N1. Sam has 12+ years of PMU experience and a steady client base travelling from Pretoria every week for microblading, lip blush and dark lip neutralisation. 5.0 Google stars across 40+ reviews.",
+    a: "Yes. Blade Boutique is in Fourways, Johannesburg, a 35 to 45 minute drive from central Pretoria via the N1. Sam has 12+ years of PMU experience and a steady client base travelling from Pretoria every week for microblading, lip blush and dark lip neutralisation. 5.0 Google stars across 40+ reviews.",
   },
   {
     q: "How long is the drive from Pretoria to Blade Boutique?",
-    a: "Central Pretoria to Blade Boutique (8 Tin Road, Bromhof) is approximately 35-40 minutes via the N1 outside of peak hours. Centurion is 25-30 minutes. Free parking on site at Balance Wellness Centre.",
+    a: "Central Pretoria to Blade Boutique (42 Witkoppen Road, Fourways) is approximately 35-45 minutes via the N1 and William Nicol Drive outside of peak hours. Centurion is 25-30 minutes. Free parking on site at Rustic Timber & Garden Centre.",
   },
   {
     q: "Can the same session handle both PMU and a touch-up if I travel from Pretoria?",
-    a: "Yes. Sam blocks the full session length whether you are coming from Bromhof or Centurion. Plan for 1 hour 30 minutes to 2 hours max in studio. Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
+    a: "Yes. Sam blocks the full session length whether you are coming from Pretoria or Centurion. Plan for 1 hour 30 minutes to 2 hours max in studio. Book via WhatsApp and mention you're travelling from PTA so Sam can stack your perfection session efficiently.",
   },
   {
     q: "Do you do dark lip neutralisation for Pretoria clients?",
@@ -98,8 +98,8 @@ export default function PermanentMakeupPretoriaPage() {
           </h1>
           <p className="bb-body-lg mb-4 max-w-[45ch]">
             Sam at Blade Boutique has been doing permanent makeup for Pretoria
-            clients for over a decade. The studio is in Bromhof, Randburg,
-            a 35 to 40 minute drive from central PTA. A steady stream of
+            clients for over a decade. The studio is in Fourways, Johannesburg,
+            a 35 to 45 minute drive from central PTA. A steady stream of
             clients drive down every week.
           </p>
           <p className="bb-meta text-bb-ink-mute mb-8">
@@ -144,16 +144,16 @@ export default function PermanentMakeupPretoriaPage() {
 
         <h2 className="bb-display-md mb-6">What's the drive like?</h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-4">
-          From <strong>central Pretoria</strong>: ~35-40 minutes via N1 off-peak.
+          From <strong>central Pretoria</strong>: ~35-45 minutes via the N1 and William Nicol off-peak.
         </p>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-4">
           From <strong>Centurion</strong>: ~25-30 minutes.
         </p>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-4">
-          From <strong>Midrand</strong>: ~20-25 minutes.
+          From <strong>Midrand</strong>: ~15-20 minutes.
         </p>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-10">
-          Free parking on site at Balance Wellness Centre. Saturday mornings
+          Free parking on site at Rustic Timber & Garden Centre. Saturday mornings
           and mid-morning weekday slots work best for PTA drives.
         </p>
       </section>
@@ -183,10 +183,10 @@ export default function PermanentMakeupPretoriaPage() {
       <section className="bb-container py-20 md:py-28">
         <p className="bb-eyebrow mb-3">Location</p>
         <h2 className="bb-display-md mb-6 max-w-[26ch]">
-          Balance Wellness Centre, Bromhof, Randburg.
+          Rustic Timber & Garden Centre, Fourways, Johannesburg.
         </h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed max-w-[58ch] mb-10">
-          8 Tin Road, Bromhof, Randburg. Easy in, easy out off the N1. Sam
+          42 Witkoppen Road, Fourways. Easy in, easy out off William Nicol Drive. Sam
           will WhatsApp you a pin drop once your booking is confirmed.
         </p>
         <MapEmbed />

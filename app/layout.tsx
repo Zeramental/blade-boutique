@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bladeboutique.co.za"),
   title: {
     default:
-      "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
+      "Blade Boutique: Permanent Makeup Studio in Fourways, Johannesburg",
     template: "%s · Blade Boutique",
   },
   description:
-    "Award-quality permanent makeup by Sam in Bromhof, Randburg. Microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner tattoo. Specialist in PMU for melanin-rich skin. Permablend + Evenflo pigments. 12+ years.",
+    "Award-quality permanent makeup by Sam in Fourways, Johannesburg. Microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner tattoo. Specialist in PMU for melanin-rich skin. Permablend + Evenflo pigments. 12+ years.",
   keywords: [
     "permanent makeup Johannesburg",
     "permanent makeup Randburg",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     "dark lip neutralisation Johannesburg",
     "eyeliner tattoo Johannesburg",
     "cosmetic tattoo Randburg",
-    "PMU Bromhof",
+    "PMU Fourways",
     "makeup tattoo Gauteng",
     "brow tattoo Johannesburg",
   ],
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     siteName: "Blade Boutique",
     url: "https://bladeboutique.co.za",
-    title: "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
+    title: "Blade Boutique: Permanent Makeup Studio in Fourways, Johannesburg",
     description:
       "Meticulous permanent makeup by Sam: microblading, nano brows, lip blush, dark lip neutralisation. Specialist in PMU for melanin-rich skin.",
     images: [
@@ -72,9 +72,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blade Boutique: Permanent Makeup in Randburg",
+    title: "Blade Boutique: Permanent Makeup in Fourways",
     description:
-      "Microblading, nano brows, lip blush, dark lip neutralisation by Sam. Bromhof, Randburg.",
+      "Microblading, nano brows, lip blush, dark lip neutralisation by Sam. Fourways, Johannesburg.",
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
   category: "Beauty & Personal Care",

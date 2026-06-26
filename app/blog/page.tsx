@@ -12,9 +12,9 @@ import { STUDIO } from "@/lib/studio";
 import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Beauty & PMU Journal | Blade Boutique Randburg",
+  title: "Beauty & PMU Journal | Blade Boutique Fourways",
   description:
-    "Honest advice on permanent makeup, brow treatments, and beauty from Sam at Blade Boutique in Bromhof, Randburg. Read about microblading, powder brows, lip treatments, and aftercare.",
+    "Honest advice on permanent makeup, brow treatments, and beauty from Sam at Blade Boutique in Fourways, Johannesburg. Read about microblading, powder brows, lip treatments, and aftercare.",
   alternates: { canonical: "/blog" },
 };
 
@@ -44,11 +44,29 @@ export default async function BlogPage({
     { name: "Journal", url: `${STUDIO.url}/blog` },
   ]);
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Beauty & PMU Journal | Blade Boutique Fourways",
+    url: `${STUDIO.url}/blog`,
+    description: "Permanent makeup advice, brow and lip treatment guides by Sam at Blade Boutique in Fourways, Johannesburg.",
+    publisher: { "@id": `${STUDIO.url}#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: allPosts.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${STUDIO.url}/blog/${p.slug}`,
+        name: p.title,
+      })),
+    },
+  };
+
   return (
     <div className="bb-container py-16 md:py-24">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLd([breadcrumb])}
+        dangerouslySetInnerHTML={jsonLd([breadcrumb, collectionSchema])}
       />
 
       {/* Page header */}

@@ -24,7 +24,7 @@ export function Hero() {
       <div className="relative bb-container py-20 md:py-28 lg:py-32 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div className="lg:col-span-7 max-w-2xl">
           <p className="bb-eyebrow mb-6">
-            Permanent Makeup · Bromhof, Randburg · Johannesburg
+            Permanent Makeup · Fourways, Johannesburg · Johannesburg
           </p>
           <h1 className="bb-display-xl mb-8 max-w-[18ch]">
             Brows you wake up{" "}
@@ -60,6 +60,28 @@ export function Hero() {
             <span className="text-bb-line" aria-hidden="true">·</span>
             <span className="text-sm text-bb-ink-soft">12+ years</span>
           </div>
+
+          {/* Location strip — confirms proximity for local searchers */}
+          <div className="mt-4 flex items-start gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="none"
+              className="w-3.5 h-3.5 mt-0.5 flex-shrink-0"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.375 4.5 8.5 4.5 8.5S12.5 9.375 12.5 6c0-2.485-2.015-4.5-4.5-4.5ZM8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
+                fill="var(--color-bb-pink)"
+                opacity="0.7"
+              />
+            </svg>
+            <p className="text-xs text-bb-ink-soft leading-relaxed">
+              Studio in Fourways, Johannesburg
+              <span className="mx-1.5 text-bb-line" aria-hidden="true">·</span>
+              15 min from Sandton, Fourways &amp; Northcliff
+            </p>
+          </div>
         </div>
 
         <div className="lg:col-span-5">
@@ -72,7 +94,7 @@ export function Hero() {
           >
             <Image
               src="/images/blade/hero-brow-mapping.png"
-              alt="Sam mapping brows before a microblading session at Blade Boutique in Bromhof, Randburg"
+              alt="Sam mapping brows before a microblading session at Blade Boutique in Fourways, Johannesburg"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"

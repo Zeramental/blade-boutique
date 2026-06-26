@@ -147,9 +147,9 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "dark-lip-neutralisation",
-    name: "Lip hyperpigmentation treatment",
+    name: "Dark lip neutralisation",
     aliases: [
-      "dark lip neutralisation",
+      "lip hyperpigmentation treatment",
       "dark lip neutralization",
       "lip neutralisation",
       "lip neutralization",
@@ -166,16 +166,17 @@ export const SERVICES: Service[] = [
     durationHours: 2,
     durationLabel: "1.5 - 2 hours",
     shortDescription:
-      "Lip hyperpigmentation treatment that brings naturally dark or unevenly pigmented lips to a soft, even rosy tone.",
+      "Dark lip neutralisation: corrective PMU that brings naturally dark or unevenly pigmented lips to a soft, even, natural tone.",
     longDescription:
-      "Lip hyperpigmentation treatment, also called dark lip neutralisation, uses warm-toned Permablend pigments in layered sessions to soften the appearance of dark or unevenly pigmented lips. A specialist treatment in short supply in South Africa — Sam has trained extensively in lip neutralisation for melanin-rich skin and is one of the most-booked providers for this work in Johannesburg and Pretoria. Most clients benefit from 2-3 sessions for the deepest results; a first session alone delivers visible softening.",
+      "Dark lip neutralisation (also called lip hyperpigmentation treatment) uses warm-toned Permablend pigments in layered sessions to soften the appearance of dark or unevenly pigmented lips. A specialist treatment in short supply in South Africa — Sam has trained extensively in lip neutralisation for melanin-rich skin and is one of the most-booked providers for this work in Johannesburg and Pretoria. Most clients benefit from 2-3 sessions for the deepest results; a first session alone delivers visible softening.",
     keywords: [
-      "lip hyperpigmentation treatment",
-      "lip hyperpigmentation treatment johannesburg",
-      "lip hyperpigmentation treatment south africa",
       "dark lip neutralisation",
       "dark lip neutralisation johannesburg",
-      "dark lip neutralization randburg",
+      "dark lip neutralisation randburg",
+      "dark lip neutralisation south africa",
+      "dark lip neutralization",
+      "lip hyperpigmentation treatment johannesburg",
+      "lip hyperpigmentation treatment south africa",
       "lip neutralisation",
       "dark lip correction",
       "ethnic lip PMU",

@@ -4,9 +4,9 @@ import { STUDIO } from "@/lib/studio";
 import { jsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Book Your Permanent Makeup Appointment at Blade Boutique, Randburg",
+  title: "Book Your Permanent Makeup Appointment at Blade Boutique, Fourways",
   description:
-    "Book microblading, nano brows, lip blush, dark lip neutralisation or eyeliner with Sam at Blade Boutique, Bromhof. Fill in the form or WhatsApp Sam directly — replies within 2 hours during studio hours.",
+    "Book microblading, nano brows, lip blush, dark lip neutralisation or eyeliner with Sam at Blade Boutique, Fourways. Fill in the form or WhatsApp Sam directly — replies within 2 hours during studio hours.",
   alternates: { canonical: "/book" },
 };
 
@@ -50,7 +50,7 @@ export default function BookPage() {
           during studio hours.
         </p>
         <p className="bb-meta text-bb-ink-mute">
-          Studio in Bromhof, Randburg · 15 min from Sandton · 20 min from Fourways
+          Studio in Fourways, Johannesburg · 15 min from Sandton · 20 min from Fourways
         </p>
       </div>
 

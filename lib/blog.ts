@@ -41,13 +41,13 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-15",
     featuredImage: "/images/blade/blog/dark-lip-guide.jpg",
     featuredImageAlt:
-      "Before and after dark lip neutralisation on melanin-rich skin at Blade Boutique Randburg",
+      "Before and after dark lip neutralisation on melanin-rich skin at Blade Boutique Fourways",
     featured: true,
     seo: {
       title:
-        "Dark Lip Neutralisation South Africa: Complete Guide | Blade Boutique Randburg",
+        "Dark Lip Neutralisation South Africa: Complete Guide | Blade Boutique Fourways",
       description:
-        "Everything you need to know about dark lip neutralisation in South Africa. How it works, who it's for, healing timeline, costs, and results. By Sam at Blade Boutique, Bromhof.",
+        "Everything you need to know about dark lip neutralisation in South Africa. How it works, who it's for, healing timeline, costs, and results. By Sam at Blade Boutique, Fourways.",
     },
     content: [
       {
@@ -274,7 +274,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Healed permanent makeup brows at week four — the result of proper aftercare",
     seo: {
       title:
-        "Permanent Makeup Aftercare Guide: Week-by-Week | Blade Boutique Randburg",
+        "Permanent Makeup Aftercare Guide: Week-by-Week | Blade Boutique Fourways",
       description:
         "The full permanent makeup aftercare guide: what to do days 1–3, the healing and ghosting phases, what to avoid, and when your result is final. By Sam at Blade Boutique.",
     },
@@ -487,7 +487,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Close-up of healed microblading brows showing fine hair strokes on melanin-rich skin",
     seo: {
       title:
-        "How Long Does Microblading Last in South Africa? | Blade Boutique Randburg",
+        "How Long Does Microblading Last in South Africa? | Blade Boutique Fourways",
       description:
         "Microblading lasts one to three years — but several factors determine where you fall in that range. Here is the honest breakdown, including SA-specific skin and climate factors.",
     },
@@ -587,12 +587,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-05-03",
     featuredImage: "/images/blade/blog/brow-lamination-johannesburg.jpg",
     featuredImageAlt:
-      "Before and after brow lamination results showing brushed-up full brows at Blade Boutique Randburg",
+      "Before and after brow lamination results showing brushed-up full brows at Blade Boutique Fourways",
     seo: {
       title:
         "Brow Lamination Johannesburg 2026: Prices, Process & What to Expect | Blade Boutique",
       description:
-        "Everything you need to know about brow lamination in Johannesburg. How it works, who it suits, how long it lasts, and what it costs. By Sam at Blade Boutique, Bromhof.",
+        "Everything you need to know about brow lamination in Johannesburg. How it works, who it suits, how long it lasts, and what it costs. By Sam at Blade Boutique, Fourways.",
     },
     content: [
       {
@@ -691,8 +691,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "cta",
-        heading: "Book your brow lamination in Randburg",
-        body: "Sam is based in Bromhof, Randburg. Message her on WhatsApp to check availability — same-week appointments are often available for lamination.",
+        heading: "Book your brow lamination in Fourways",
+        body: "Sam is based in Fourways, Johannesburg. Message her on WhatsApp to check availability — same-week appointments are often available for lamination.",
       },
     ],
   },
@@ -710,7 +710,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Healed lip blush tattoo result showing soft natural pink colour on South African woman",
     seo: {
       title:
-        "Lip Blush Tattoo South Africa: Complete Guide 2026 | Blade Boutique Randburg",
+        "Lip Blush Tattoo South Africa: Complete Guide 2026 | Blade Boutique Fourways",
       description:
         "Everything about lip blush tattoo in South Africa: what it is, who it suits, healing timeline, melanin-rich skin considerations, and costs at Blade Boutique Johannesburg.",
     },
@@ -835,7 +835,7 @@ export const BLOG_POSTS: BlogPost[] = [
       title:
         "Permanent Eyeliner Tattoo Johannesburg: Complete Guide 2026 | Blade Boutique",
       description:
-        "Everything about permanent eyeliner in Johannesburg: styles, pain levels, healing, how long it lasts, and what it costs. By Sam at Blade Boutique, Bromhof Randburg.",
+        "Everything about permanent eyeliner in Johannesburg: styles, pain levels, healing, how long it lasts, and what it costs. By Sam at Blade Boutique, Fourways, Johannesburg.",
     },
     content: [
       {

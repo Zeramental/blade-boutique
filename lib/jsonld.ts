@@ -20,7 +20,7 @@ export function localBusinessSchema() {
     email: STUDIO.email,
     priceRange: STUDIO.priceRange,
     description:
-      "Permanent makeup studio in Bromhof, Randburg. Microblading, nano brows, powder brows, lip blush, dark lip neutralisation and eyeliner tattoo by Sam. Specialist in PMU for melanin-rich skin.",
+      "Permanent makeup studio in Fourways, Johannesburg. Microblading, nano brows, powder brows, lip blush, dark lip neutralisation and eyeliner tattoo by Sam. Specialist in PMU for melanin-rich skin.",
     slogan: STUDIO.tagline,
     founder: { "@id": PERSON_ID },
     employee: { "@id": PERSON_ID },

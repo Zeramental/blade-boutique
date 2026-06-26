@@ -12,9 +12,9 @@ import { SERVICES, getService } from "@/lib/services";
 import { jsonLd, faqSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Blade Boutique: Permanent Makeup Studio in Bromhof, Randburg",
+  title: "Blade Boutique: Permanent Makeup Studio in Fourways, Johannesburg",
   description:
-    "Meticulous permanent makeup by Sam: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner. Bromhof, Randburg. Specialist in PMU for melanin-rich skin. 12+ years. Permablend + Evenflo pigments.",
+    "Meticulous permanent makeup by Sam: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner. Fourways, Johannesburg. Specialist in PMU for melanin-rich skin. 12+ years. Permablend + Evenflo pigments.",
   alternates: { canonical: "/" },
 };
 
@@ -29,7 +29,7 @@ const HOME_FAQ = [
   },
   {
     q: "Where is Blade Boutique located?",
-    a: "Blade Boutique is inside Balance Wellness Centre at 8 Tin Road, Bromhof, Randburg. The studio serves Johannesburg, Sandton, Northriding, Fourways and Pretoria, with clients occasionally travelling from Durban and Cape Town.",
+    a: "Blade Boutique is inside Rustic Timber & Garden Centre at 42 Witkoppen Road, Fourways. The studio serves Fourways, Sandton, Bryanston, Randburg, Johannesburg and Pretoria, with clients occasionally travelling from Durban and Cape Town.",
   },
   {
     q: "Will it hurt?",
@@ -108,7 +108,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
             {[
-              { src: "/images/blade/gallery-brows-1.jpg", alt: "Microblading before and after on a client at Blade Boutique in Randburg" },
+              { src: "/images/blade/gallery-brows-1.jpg", alt: "Microblading before and after on a client at Blade Boutique in Fourways" },
               { src: "/images/blade/gallery-lips-3.jpg", alt: "Lip blush healed result by Sam at Blade Boutique" },
               { src: "/images/blade/gallery-brows-3.jpg", alt: "Powder brows healed result on oily skin" },
               { src: "/images/blade/home/healed-lips.webp", alt: "Dark lip neutralisation before and after on melanin-rich skin" },
@@ -183,7 +183,7 @@ export default function Home() {
               pigments. Sam is trained across every skin tone — brows, lips,
               eyeliner, lash and brow styling — with a particular specialty in
               lip neutralisation for melanin-rich skin. She works out of Balance
-              Wellness Centre in Bromhof, Randburg. One chair, one client at a
+              Wellness Centre in Fourways, Johannesburg. One chair, one client at a
               time.
             </p>
             <div className="flex flex-wrap gap-3 mb-8">

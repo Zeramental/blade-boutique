@@ -152,9 +152,9 @@ const CAMPAIGN_RULES: Array<{
   {
     match: (c) => c.includes("pmu_city") || c.includes("near_me"),
     config: {
-      heading: "Permanent makeup in Johannesburg — let's chat.",
+      heading: "Permanent makeup in Johannesburg. Let's chat.",
       subtext:
-        "Sam's studio is in Bromhof, Randburg — easy access from Fourways, Sandton, and Northriding. WhatsApp her to find out what's possible for your brows, lips, or lashes.",
+        "Sam's studio is in Fourways, Johannesburg, with easy access from Sandton, Bryanston, Randburg and the northern suburbs. WhatsApp her to find out what's possible for your brows, lips, or lashes.",
       whatsappMessage:
         "Hi Sam, I found Blade Boutique on Google looking for permanent makeup in Johannesburg. I'd love to find out more and book a consultation.",
       buttonLabel: "Book a consultation with Sam",

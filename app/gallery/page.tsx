@@ -6,7 +6,7 @@ import { getService } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Gallery: Real, Healed Permanent Makeup Results",
   description:
-    "Before and after photos from Sam's permanent makeup work at Blade Boutique, Bromhof. Every photo a real client, healed at 4+ weeks. No filters.",
+    "Before and after photos from Sam's permanent makeup work at Blade Boutique, Fourways. Every photo a real client, healed at 4+ weeks. No filters.",
 };
 
 export default function GalleryPage() {

@@ -35,12 +35,12 @@ export async function generateMetadata({
   const altNames = service.aliases.slice(0, 2).join(", ");
 
   return {
-    title: `${service.name} in Randburg & Johannesburg: ${priceLabel} at Blade Boutique`,
-    description: `${service.shortDescription} ${service.name} (also known as ${altNames}) by Sam at Blade Boutique, Bromhof. ${service.fromPrice ? `From ${service.fromPriceLabel}.` : "Consultation-based pricing."} Permablend + Evenflo pigments.`,
+    title: `${service.name} in Fourways & Johannesburg: ${priceLabel} at Blade Boutique`,
+    description: `${service.shortDescription} ${service.name} (also known as ${altNames}) by Sam at Blade Boutique, Fourways. ${service.fromPrice ? `From ${service.fromPriceLabel}.` : "Consultation-based pricing."} Permablend + Evenflo pigments.`,
     alternates: { canonical: `/services/${service.slug}` },
     keywords: service.keywords,
     openGraph: {
-      title: `${service.name} at Blade Boutique, Randburg`,
+      title: `${service.name} at Blade Boutique, Fourways`,
       description: service.shortDescription,
       url: `${STUDIO.url}/services/${service.slug}`,
       images: [{ url: service.image, alt: `${service.name} by Sam at Blade Boutique` }],
@@ -94,9 +94,9 @@ export default async function ServicePage({
       <section className="bb-container py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="bb-eyebrow mb-3">
-            {service.isPMU ? "Permanent Makeup" : "Treatment"} · Randburg, Johannesburg
+            {service.isPMU ? "Permanent Makeup" : "Treatment"} · Fourways, Johannesburg
           </p>
-          <h1 className="bb-display-lg mb-6">{service.name}</h1>
+          <h1 className="bb-display-lg mb-6">{service.name} in Fourways</h1>
           <p className="bb-body-lg mb-4 max-w-[45ch]">
             {service.shortDescription}
           </p>
@@ -118,7 +118,7 @@ export default async function ServicePage({
             {service.isPMU ? " · Perfection session included" : ""}
           </p>
           <p className="bb-meta mt-2 text-bb-ink-mute">
-            Studio in Bromhof, Randburg · 15 min from Sandton · 20 min from Fourways
+            Studio in Fourways, Johannesburg · 15 min from Sandton · 20 min from Fourways
           </p>
         </div>
         <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line bg-bb-clay-soft">

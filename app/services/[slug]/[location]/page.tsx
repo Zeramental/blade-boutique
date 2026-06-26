@@ -39,7 +39,7 @@ export async function generateMetadata({
 
   return {
     title: `${service.name} in ${location.name} | Blade Boutique`,
-    description: `${service.name} in ${location.name} by Sam at Blade Boutique, Bromhof, Randburg — ${location.driveRange} from ${location.name}. ${service.fromPrice ? `${service.fromPriceLabel}, perfection session included.` : "Priced at consultation."} Specialist in PMU for melanin-rich skin. 5.0 Google rating, 40+ reviews.`,
+    description: `${service.name} in ${location.name} by Sam at Blade Boutique, Fourways, Johannesburg — ${location.driveRange} from ${location.name}. ${service.fromPrice ? `${service.fromPriceLabel}, perfection session included.` : "Priced at consultation."} Specialist in PMU for melanin-rich skin. 5.0 Google rating, 40+ reviews.`,
     alternates: {
       canonical: `/services/${slug}/${locationSlug}`,
     },
@@ -83,7 +83,7 @@ export default async function ServiceLocationPage({
       name: `${service.name} in ${location.name}`,
       alternateName: service.aliases,
       serviceType: service.category === "tattoos" ? "Tattoo" : "Permanent makeup",
-      description: `${service.longDescription} Serving clients from ${location.fullName}, ${location.driveRange} from Blade Boutique in Bromhof, Randburg.`,
+      description: `${service.longDescription} Serving clients from ${location.fullName}, ${location.driveRange} from Blade Boutique in Fourways, Johannesburg.`,
       url: `${STUDIO.url}/services/${slug}/${locationSlug}`,
       provider: {
         "@type": "LocalBusiness",
@@ -177,7 +177,7 @@ export default async function ServiceLocationPage({
             {service.shortDescription}
           </p>
           <p className="bb-meta text-bb-ink-mute mb-8">
-            At Blade Boutique, Bromhof, Randburg — {location.driveRange} from {location.name}{" "}
+            At Blade Boutique, Fourways, Johannesburg — {location.driveRange} from {location.name}{" "}
             {location.driveRoute}.{" "}
             {service.fromPrice ? `From ${service.fromPriceLabel}` : "Consultation pricing"}.
           </p>
@@ -274,7 +274,7 @@ export default async function ServiceLocationPage({
         <h2 className="bb-display-md mb-6">Getting here from {location.name}</h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-4">{location.directions}</p>
         <p className="text-bb-ink-soft text-lg leading-relaxed mb-12">
-          The studio is a single-chair room inside Balance Wellness Centre — quiet, private, and
+          The studio is a single-chair room inside Rustic Timber & Garden Centre — quiet, private, and
           nothing like a busy salon. Free parking is on-site. Sam will WhatsApp you a pin drop when
           you confirm your booking.
         </p>
@@ -367,7 +367,7 @@ function buildLocationFaq(
   return [
     {
       q: `Where is the best ${nameLower} in ${location.name}?`,
-      a: `Blade Boutique is a specialist ${service.isPMU ? "permanent makeup" : "beauty"} studio inside Balance Wellness Centre at 8 Tin Road, Bromhof, Randburg — ${location.driveRange} from ${location.name} ${location.driveRoute}. Sam has 12+ years of full-time PMU experience, uses Permablend and Evenflo pigments, and holds a 5.0 Google rating across 40+ reviews. Single-chair studio, no double-booking.`,
+      a: `Blade Boutique is a specialist ${service.isPMU ? "permanent makeup" : "beauty"} studio inside Rustic Timber & Garden Centre at 42 Witkoppen Road, Fourways — ${location.driveRange} from ${location.name} ${location.driveRoute}. Sam has 12+ years of full-time PMU experience, uses Permablend and Evenflo pigments, and holds a 5.0 Google rating across 40+ reviews. Single-chair studio, no double-booking.`,
     },
     {
       q: `How much does ${nameLower} cost in ${location.name}?`,

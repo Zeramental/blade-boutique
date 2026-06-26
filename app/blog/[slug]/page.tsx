@@ -3,10 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPost } from "@/lib/blog";
+import { SERVICES } from "@/lib/services";
 import { BlogPostContent } from "@/components/BlogPostContent";
 import { BlogCard } from "@/components/BlogCard";
 import { STUDIO } from "@/lib/studio";
 import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
+
+const CATEGORY_SERVICE_SLUGS: Record<string, string[]> = {
+  Brows: ["microblading", "nano-brows", "powder-brows", "brow-lamination"],
+  Lips: ["dark-lip-neutralisation", "lip-blush"],
+  Eyes: ["eyeliner", "lash-enhancement"],
+  Aftercare: ["microblading", "powder-brows", "lip-blush"],
+  Advice: ["microblading", "powder-brows", "dark-lip-neutralisation", "lip-blush"],
+};
 
 export function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -77,15 +86,29 @@ export default async function BlogPostPage({
     dateModified: post.updatedAt ?? post.publishedAt,
     author: {
       "@type": "Person",
+      "@id": `${STUDIO.url}#sam`,
       name: "Sam",
       url: STUDIO.url,
+      jobTitle: "Permanent Makeup Artist",
+      worksFor: { "@type": "Organization", name: "Blade Boutique" },
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${STUDIO.url}#organization`,
       name: "Blade Boutique",
       url: STUDIO.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${STUDIO.url}/logo.png`,
+      },
     },
   };
+
+  const relatedServiceSlugs = CATEGORY_SERVICE_SLUGS[post.category] ?? [];
+  const relatedServices = relatedServiceSlugs
+    .map((slug) => SERVICES.find((s) => s.slug === slug))
+    .filter(Boolean)
+    .slice(0, 3) as typeof SERVICES;
 
   return (
     <>
@@ -174,7 +197,59 @@ export default async function BlogPostPage({
 
           {/* Content blocks */}
           <BlogPostContent blocks={post.content} />
+
+          {/* Author bio */}
+          <div className="mt-14 pt-10 border-t border-bb-line flex items-start gap-5">
+            <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-bb-surface-alt border border-bb-line">
+              <Image
+                src="/images/blade/sam-portrait.jpg"
+                alt="Sam, Blade Boutique"
+                fill
+                sizes="56px"
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p className="bb-eyebrow mb-1">Written by</p>
+              <p className="font-medium text-bb-ink mb-1.5">Sam — Blade Boutique, Fourways</p>
+              <p className="text-[14px] text-bb-ink-soft leading-relaxed max-w-[52ch]">
+                12 years in permanent makeup. Specialist in PMU for melanin-rich skin, dark lip neutralisation, nano brows, and lip blush. Permablend and Evenflo pigments exclusively. Based in Fourways, Johannesburg.
+              </p>
+            </div>
+          </div>
         </div>
+
+        {/* Related treatments */}
+        {relatedServices.length > 0 && (
+          <section className="mt-16 pt-12 border-t border-bb-line">
+            <p className="bb-eyebrow mb-3">At Blade Boutique, Fourways</p>
+            <h2
+              className="bb-display-md mb-8"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Related treatments
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedServices.map((s) => (
+                <Link
+                  key={s.slug}
+                  href={`/services/${s.slug}`}
+                  className="group block bg-bb-surface rounded-[16px] border border-bb-line p-5 hover:border-bb-pink/40 hover:shadow-sm transition-all duration-200"
+                >
+                  <p className="font-medium text-bb-ink mb-1.5 group-hover:text-bb-pink transition-colors">
+                    {s.name}
+                  </p>
+                  <p className="text-[13px] text-bb-ink-soft leading-relaxed mb-3 line-clamp-2">
+                    {s.shortDescription}
+                  </p>
+                  <p className="text-[12px] text-bb-ink-mute font-medium">
+                    {s.fromPriceLabel || "Enquire"} →
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Related posts */}
         {relatedPosts.length > 0 && (

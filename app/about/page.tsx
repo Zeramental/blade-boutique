@@ -6,7 +6,7 @@ import { STUDIO } from "@/lib/studio";
 export const metadata: Metadata = {
   title: "About Sam: 12+ Years of Permanent Makeup in Johannesburg",
   description:
-    "Meet Sam, the permanent makeup artist behind Blade Boutique in Bromhof, Randburg. PhiBrows-trained, specialist in PMU for melanin-rich skin, Permablend + Evenflo pigments. Serving Johannesburg and Pretoria.",
+    "Meet Sam, the permanent makeup artist behind Blade Boutique in Fourways, Johannesburg. PhiBrows-trained, specialist in PMU for melanin-rich skin, Permablend + Evenflo pigments. Serving Johannesburg and Pretoria.",
   alternates: { canonical: "/about" },
 };
 
@@ -48,8 +48,8 @@ export default function AboutPage() {
             stuff because healing is where permanent makeup is won or lost.
           </p>
           <p>
-            The studio is inside Balance Wellness Centre in Bromhof,
-            Randburg. One chair. When you book, you get my full attention for
+            The studio is inside Rustic Timber & Garden Centre in Fourways,
+            Johannesburg. One chair. When you book, you get my full attention for
             the full session. No rushing. No upselling. Just the work you came
             for, done properly.
           </p>

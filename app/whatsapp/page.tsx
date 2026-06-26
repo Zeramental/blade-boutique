@@ -6,7 +6,7 @@ import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { resolveAdMessage, type AdParams } from "@/lib/adMessages";
 
 export const metadata: Metadata = {
-  title: "WhatsApp Sam at Blade Boutique — Permanent Makeup, Bromhof",
+  title: "WhatsApp Sam at Blade Boutique — Permanent Makeup, Fourways",
   description:
     "Chat with Sam at Blade Boutique on WhatsApp. Book microblading, nano brows, lip blush, dark lip neutralisation or any permanent makeup treatment. She replies within 2 hours.",
   alternates: { canonical: "/whatsapp" },

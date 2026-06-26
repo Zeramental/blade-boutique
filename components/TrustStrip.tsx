@@ -4,7 +4,7 @@ const ITEMS = [
   { label: "12+ years experience" },
   { label: "Permablend + Evenflo pigments" },
   { label: "PhiBrows certified" },
-  { label: "Balance Wellness Centre, Bromhof" },
+  { label: "Rustic Timber & Garden Centre, Fourways" },
 ];
 
 export function TrustStrip() {

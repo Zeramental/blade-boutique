@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title:
     "Microblading Johannesburg: Natural Hair-Stroke Brows by Sam, from R2,500",
   description:
-    "Microblading in Johannesburg by Sam at Blade Boutique, Bromhof, Randburg. 12+ years, Permablend and Evenflo pigments, specialist in PMU for melanin-rich skin. Serving Sandton, Fourways, Northriding, Rosebank and surrounds. From R2,500, perfection session included.",
+    "Microblading in Johannesburg by Sam at Blade Boutique, Fourways. 12+ years, Permablend and Evenflo pigments, specialist in PMU for melanin-rich skin. Serving Fourways, Sandton, Bryanston, Randburg and surrounds. From R2,500, perfection session included.",
   alternates: { canonical: "/microblading-johannesburg" },
   keywords: [
     "microblading johannesburg",
@@ -49,15 +49,15 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     q: "Where is the best microblading studio in Johannesburg?",
-    a: "Blade Boutique is a single-chair specialist microblading studio inside Balance Wellness Centre at 8 Tin Road, Bromhof, Randburg. Sam has 12+ years of PMU experience, uses Permablend and Evenflo pigments, and specialises in hair-stroke brows for melanin-rich skin. 5.0 Google stars across 40+ reviews.",
+    a: "Blade Boutique is a single-chair specialist microblading studio inside Rustic Timber & Garden Centre at 42 Witkoppen Road, Fourways. Sam has 12+ years of PMU experience, uses Permablend and Evenflo pigments, and specialises in hair-stroke brows for melanin-rich skin. 5.0 Google stars across 40+ reviews.",
   },
   {
     q: "How much does microblading cost in Johannesburg?",
     a: "Microblading at Blade Boutique is R2,500 and includes the perfection session within 4 weeks of your first treatment. Annual colour boosts are R1,100 (under 12 months) or R1,800 (12-16 months). This is in line with specialist PMU pricing across Johannesburg. Quality microblading in JHB ranges from R2,000 to R4,500 depending on artist experience and pigment brand.",
   },
   {
-    q: "How do I get to Blade Boutique from Sandton, Fourways or Rosebank?",
-    a: "Bromhof is a 10-15 minute drive from Sandton, 8-12 minutes from Fourways, and 15-20 minutes from Rosebank. Free parking is available at Balance Wellness Centre. The studio is easiest to reach via N1 or William Nicol. Sam will WhatsApp you a pin drop when you confirm your booking.",
+    q: "How do I get to Blade Boutique from Sandton, Randburg or Rosebank?",
+    a: "The studio in Fourways is a 12-15 minute drive from Sandton, 15-20 minutes from Randburg, and 15-20 minutes from Rosebank. Free parking is available at Rustic Timber & Garden Centre. The studio is easiest to reach via William Nicol Drive or Witkoppen Road. Sam will WhatsApp you a pin drop when you confirm your booking.",
   },
   {
     q: "How long does microblading last on different skin types?",
@@ -84,7 +84,7 @@ export default function MicrobladingJohannesburgPage() {
       ...microblading,
       name: "Microblading Johannesburg",
       longDescription:
-        "Microblading in Johannesburg by Sam at Blade Boutique, a specialist PMU studio in Bromhof, Randburg. Hand-drawn hair-stroke brows using Permablend and Evenflo pigments, custom-mixed for your skin tone. Twelve years of experience, perfection session included. Serving Sandton, Fourways, Northriding, Rosebank, Randburg and the wider Johannesburg metro.",
+        "Microblading in Johannesburg by Sam at Blade Boutique, a specialist PMU studio in Fourways. Hand-drawn hair-stroke brows using Permablend and Evenflo pigments, custom-mixed for your skin tone. Twelve years of experience, perfection session included. Serving Fourways, Sandton, Bryanston, Lonehill, Randburg, Rosebank and the wider Johannesburg metro.",
     }),
     faqSchema(FAQ_ITEMS),
     breadcrumbSchema([
@@ -104,12 +104,12 @@ export default function MicrobladingJohannesburgPage() {
             Microblading in Johannesburg, by Sam.
           </h1>
           <p className="bb-body-lg mb-4 max-w-[45ch]">
-            Hand-drawn hair-stroke brows at Blade Boutique, Bromhof, Randburg.
+            Hand-drawn hair-stroke brows at Blade Boutique, Fourways.
             Twelve years in, specialist in melanin-rich skin, Permablend and
             Evenflo pigments. One chair, one client at a time.
           </p>
           <p className="bb-meta text-bb-ink-mute mb-8">
-            Serving Sandton, Fourways, Northriding, Rosebank, Randburg and the
+            Serving Fourways, Sandton, Bryanston, Lonehill, Randburg and the
             wider Johannesburg metro. From R2,500 · perfection session included.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -177,13 +177,13 @@ export default function MicrobladingJohannesburgPage() {
       <section className="bb-container py-20 md:py-28">
         <p className="bb-eyebrow mb-3">Location</p>
         <h2 className="bb-display-md mb-6 max-w-[22ch]">
-          Bromhof, Randburg. 15 minutes from Sandton.
+          Fourways, Johannesburg. 15 minutes from Sandton.
         </h2>
         <p className="text-bb-ink-soft text-lg leading-relaxed max-w-[58ch] mb-10">
-          The studio is inside <strong>Balance Wellness Centre, 8 Tin Road,
-          Bromhof, Randburg</strong>. Easy parking, single-chair, calm room.
-          Quick off the N1 or via William Nicol from Sandton, Fourways and
-          Rosebank.
+          The studio is inside <strong>Rustic Timber & Garden Centre, 42 Witkoppen
+          Road, Fourways</strong>. Easy parking, single-chair, calm room.
+          Quick via William Nicol Drive or Witkoppen Road from Sandton, Bryanston
+          and Randburg.
         </p>
         <MapEmbed />
       </section>

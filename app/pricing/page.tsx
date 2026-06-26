@@ -11,7 +11,7 @@ import { STUDIO } from "@/lib/studio";
 import { PageViewTracker } from "@/components/PageViewTracker";
 
 export const metadata: Metadata = {
-  title: "Permanent Makeup Prices: Microblading, Lip Blush, Eyeliner (Randburg)",
+  title: "Permanent Makeup Prices Johannesburg 2026 | Blade Boutique Fourways",
   description:
     "Full Blade Boutique price list. Microblading R2,500 · Nano brows R2,800 · Powder brows R2,500 · Lip blush R2,500 · Dark lip neutralisation R2,800 · Eyeliner R2,000. All PMU prices include a perfection session.",
   alternates: { canonical: "/pricing" },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const PRICING_FAQ = [
   {
     q: "How much does microblading cost in Johannesburg?",
-    a: "At Blade Boutique in Bromhof, Randburg, microblading is R2,500 for the full session, with a R1,100 touch-up under 12 months. The price includes a perfection session within 4 weeks of your first treatment.",
+    a: "At Blade Boutique in Fourways, Johannesburg, microblading is R2,500 for the full session, with a R1,100 touch-up under 12 months. The price includes a perfection session within 4 weeks of your first treatment.",
   },
   {
     q: "How much is lip blush in South Africa?",

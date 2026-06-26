@@ -12,9 +12,9 @@ import { jsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Permanent Makeup & Cosmetic Tattoo Services at Bromhof, Randburg",
+  title: "Permanent Makeup & Cosmetic Tattoo Services at Fourways, Johannesburg",
   description:
-    "Every treatment Sam offers at Blade Boutique in Bromhof, Randburg: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner, freckles, brow lamination, lash lift and fine line tattoos.",
+    "Every treatment Sam offers at Blade Boutique in Fourways, Johannesburg: microblading, nano brows, powder brows, lip blush, dark lip neutralisation, eyeliner, freckles, brow lamination, lash lift and fine line tattoos.",
   alternates: { canonical: "/services" },
 };
 
@@ -32,8 +32,8 @@ export default function ServicesPage() {
         Permanent makeup, by treatment.
       </h1>
       <p className="bb-body-lg max-w-[58ch] mb-16">
-        Eleven treatments, all done by Sam in a single-chair Bromhof studio at
-        Balance Wellness Centre. PMU sessions use Permablend and Evenflo
+        Eleven treatments, all done by Sam in a single-chair Fourways studio at
+        Rustic Timber & Garden Centre. PMU sessions use Permablend and Evenflo
         pigments, custom-mixed to your undertone. Pick the one you came for,
         or message Sam on WhatsApp if you&rsquo;re unsure where to start.
       </p>
