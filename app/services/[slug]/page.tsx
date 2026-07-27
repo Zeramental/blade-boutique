@@ -36,7 +36,7 @@ export async function generateMetadata({
 
   return {
     title: `${service.name} in Fourways & Johannesburg: ${priceLabel} at Blade Boutique`,
-    description: `${service.shortDescription} ${service.name} (also known as ${altNames}) by Sam at Blade Boutique, Fourways. ${service.fromPrice ? `From ${service.fromPriceLabel}.` : "Consultation-based pricing."} Permablend + Evenflo pigments.`,
+    description: `${service.shortDescription} ${service.name} (also known as ${altNames}) by Sam at Blade Boutique, Fourways. ${service.fromPrice ? `From ${service.fromPriceLabel}.` : "Consultation-based pricing."}${service.isPMU ? " Permablend + Evenflo pigments." : ""}`,
     alternates: { canonical: `/services/${service.slug}` },
     keywords: service.keywords,
     openGraph: {
@@ -55,7 +55,7 @@ export default async function ServicePage({
   const service = getService(slug);
   if (!service) notFound();
 
-  const faq = buildFaq(service);
+  const faq = service.faqs ?? buildFaq(service);
   const graph = [
     serviceSchema(service),
     faqSchema(faq),
@@ -143,12 +143,12 @@ export default async function ServicePage({
 
         <h2 className="bb-display-md mb-6">How the session works</h2>
         <ol className="space-y-6 mb-12">
-          {[
+          {(service.sessionSteps ?? [
             ["Consultation and mapping", "We talk through the look, shape and pigment shade. Sam maps everything in pencil before any pigment touches the skin. Nothing is locked in until you approve it."],
             ["Numbing", "Layered topical numbing for full comfort throughout the session. Lips get a stronger numbing protocol."],
             ["Pigment session", "60 to 90 minutes of careful, deliberate work using Permablend or Evenflo pigments custom-mixed for your skin tone."],
             ["Aftercare brief", "You go home with an aftercare kit and a clear day-by-day healing guide. Sam is on WhatsApp if anything comes up."],
-          ].map(([title, body], i) => (
+          ]).map(([title, body], i) => (
             <li key={i} className="flex gap-4">
               <span className="bb-display-sm text-bb-clay flex-shrink-0 w-10">
                 {i + 1}.

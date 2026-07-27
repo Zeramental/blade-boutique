@@ -163,7 +163,14 @@ export function serviceSchema(service: Service) {
     "@id": `${STUDIO.url}/services/${service.slug}#service`,
     name: service.name,
     alternateName: service.aliases,
-    serviceType: service.category === "tattoos" ? "Tattoo" : "Permanent makeup",
+    serviceType:
+      service.category === "tattoos"
+        ? "Tattoo"
+        : service.category === "waxing"
+          ? "Waxing"
+          : service.isPMU
+            ? "Permanent makeup"
+            : "Beauty treatment",
     category: service.isPMU ? "Permanent Makeup" : "Beauty Treatment",
     description: service.longDescription,
     url: `${STUDIO.url}/services/${service.slug}`,

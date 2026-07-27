@@ -1,4 +1,4 @@
-export type ServiceCategory = "brows" | "lips" | "eyes" | "face" | "addons" | "tattoos";
+export type ServiceCategory = "brows" | "lips" | "eyes" | "face" | "addons" | "tattoos" | "waxing";
 
 export type Service = {
   slug: string;
@@ -16,6 +16,11 @@ export type Service = {
   keywords: string[];
   image: string;
   isPMU: boolean;
+  // Optional per-service overrides. When absent, the service page falls back to
+  // the default PMU session steps / FAQ. Non-PMU services (e.g. waxing) supply
+  // their own so the page doesn't talk about numbing and pigment.
+  sessionSteps?: [string, string][];
+  faqs?: { q: string; a: string }[];
 };
 
 export const SERVICES: Service[] = [
@@ -359,6 +364,79 @@ export const SERVICES: Service[] = [
     image: "/images/blade/gallery-brows-3.jpg",
     isPMU: false,
   },
+  {
+    slug: "full-body-waxing",
+    name: "Full body waxing",
+    aliases: [
+      "body waxing",
+      "brazilian wax",
+      "hollywood wax",
+      "leg wax",
+      "underarm wax",
+      "arm wax",
+      "back wax",
+      "bikini wax",
+      "hot wax",
+    ],
+    category: "waxing",
+    fromPrice: null,
+    fromPriceLabel: "Contact to find out",
+    touchUpPrice: null,
+    touchUpLabel: "",
+    durationHours: 1,
+    durationLabel: "By area booked",
+    shortDescription:
+      "Full body waxing in Fourways: smooth, salon-fresh skin from head to toe. Legs, underarms, arms, back, bikini, Brazilian and Hollywood, all done gently and hygienically.",
+    longDescription:
+      "Full body waxing at Blade Boutique gives you smooth, salon-fresh skin that lasts three to four weeks, far longer than shaving ever could. Sam waxes everything from legs, underarms and arms to back, bikini, Brazilian and Hollywood, using a warm, skin-kind wax and a hygienic, professional technique with a fresh spatula every time, never double-dipped. Regular waxing means finer, softer regrowth over time, no nicks, no razor bumps and no five o'clock shadow. Whether you're prepping for a holiday, a special event, or you just love that freshly-waxed feeling, it's done in a relaxed, judgement-free studio in Fourways. Book a full body wax or just the areas you want.",
+    keywords: [
+      "full body waxing",
+      "full body waxing fourways",
+      "waxing near me",
+      "waxing fourways",
+      "waxing johannesburg",
+      "brazilian wax",
+      "brazilian wax johannesburg",
+      "hollywood wax",
+      "body waxing",
+      "leg wax",
+      "underarm waxing",
+      "back wax",
+      "bikini wax",
+      "hot wax fourways",
+      "waxing salon near me",
+    ],
+    image: "/images/blade/full-body-waxing.png",
+    isPMU: false,
+    sessionSteps: [
+      ["Consultation and patch test", "We talk through the areas you want waxed and how sensitive your skin is. On a first visit a quick patch test makes sure the wax suits you."],
+      ["Prep and cleanse", "The area is cleansed and prepped with a pre-wax oil so the wax lifts the hair cleanly without pulling at the skin."],
+      ["Gentle waxing", "Warm, skin-kind wax applied and removed section by section with a careful, hygienic technique. Fresh spatula every time, never double-dipped."],
+      ["Soothe and aftercare", "A calming post-wax lotion settles the skin, and you leave with simple aftercare tips to keep it smooth and bump-free."],
+    ],
+    faqs: [
+      {
+        q: "How long does full body waxing last?",
+        a: "Most clients stay smooth for three to four weeks. With regular waxing the regrowth comes back finer and softer over time, so it lasts longer the more you keep it up.",
+      },
+      {
+        q: "Does waxing hurt?",
+        a: "There's a quick sting as the wax lifts, strongest on sensitive areas like the bikini line and underarms, but it fades fast. Sam works quickly and gently, and it gets easier every visit as the hair grows back finer.",
+      },
+      {
+        q: "What areas can I have waxed?",
+        a: "Everything: legs, underarms, arms, back, chest, bikini, Brazilian and Hollywood, plus smaller areas like lip and chin. Book a full body wax or just the areas you want.",
+      },
+      {
+        q: "How should I prepare for a wax?",
+        a: "Let the hair grow to about 5mm, roughly two weeks of regrowth, so the wax can grip it. Exfoliate gently a day or two before, skip lotions and oils on the day, and avoid sun or heat straight after.",
+      },
+      {
+        q: "How much is full body waxing at Blade Boutique?",
+        a: "Pricing depends on the areas you book, so it's contact to find out. Message Sam on WhatsApp and she'll give you a quote for exactly what you want, full body or single areas.",
+      },
+    ],
+  },
 ];
 
 export function getService(slug: string): Service | undefined {
@@ -372,6 +450,7 @@ export const SERVICE_CATEGORIES: Record<ServiceCategory, string> = {
   face: "Face",
   addons: "Brow lamination & lash lift",
   tattoos: "Fine line tattoos",
+  waxing: "Waxing",
 };
 
 export const CATEGORY_ORDER: ServiceCategory[] = [
@@ -380,6 +459,7 @@ export const CATEGORY_ORDER: ServiceCategory[] = [
   "lips",
   "eyes",
   "face",
+  "waxing",
   "tattoos",
 ];
 

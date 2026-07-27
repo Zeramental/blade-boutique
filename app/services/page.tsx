@@ -94,5 +94,7 @@ function categoryBlurb(cat: ServiceCategory): string {
       return "Brow lamination and lash lifting, two of Sam's most-booked treatments. Perfect if you're not ready for permanent work yet.";
     case "tattoos":
       return "Fine line and small-piece tattoos, priced by design. Full-day sessions available.";
+    case "waxing":
+      return "Full body and single-area waxing, from Brazilian and Hollywood to legs, underarms and back. Smooth, salon-fresh skin that lasts weeks.";
   }
 }
