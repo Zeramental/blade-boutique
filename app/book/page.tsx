@@ -50,7 +50,7 @@ export default function BookPage() {
           during studio hours.
         </p>
         <p className="bb-meta text-bb-ink-mute">
-          Studio in Fourways, Johannesburg · 15 min from Sandton · 20 min from Fourways
+          Studio in Fourways, Johannesburg · 15 min from Sandton · 5 min from Fourways Mall
         </p>
       </div>
 

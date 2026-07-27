@@ -118,7 +118,7 @@ export default async function ServicePage({
             {service.isPMU ? " · Perfection session included" : ""}
           </p>
           <p className="bb-meta mt-2 text-bb-ink-mute">
-            Studio in Fourways, Johannesburg · 15 min from Sandton · 20 min from Fourways
+            Studio in Fourways, Johannesburg · 15 min from Sandton · 5 min from Fourways Mall
           </p>
         </div>
         <div className="relative aspect-[4/5] rounded-[20px] overflow-hidden border border-bb-line bg-bb-clay-soft">
